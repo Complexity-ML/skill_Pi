@@ -1,0 +1,10 @@
+{
+  "name": "@complexity-ml/skill-pi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "217 Hermes-origin skills with Pi compatibility guidance",
+  "keywords": ["pi-package", "agent-skills"],
+  "repository": {"type": "git", "url": "https://github.com/Complexity-ML/skill_Pi.git"},
+  "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.md",
+  "pi": {"skills": ["./skills"]}
+}

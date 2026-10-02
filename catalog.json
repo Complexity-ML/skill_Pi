@@ -1,0 +1,1304 @@
+[
+  {
+    "name": "1password",
+    "description": "Set up op CLI, sign in, and read or inject secrets.",
+    "path": "skills/optional/security/1password/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "3-statement-model",
+    "description": "Build integrated IS/BS/CF financial workbooks in Excel.",
+    "path": "skills/optional/finance/3-statement-model/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "accelerate",
+    "description": "Run PyTorch training across GPUs with minimal changes.",
+    "path": "skills/optional/mlops/accelerate/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "adversarial-ux-test",
+    "description": "Roleplay a hostile user to find and triage UX pain points.",
+    "path": "skills/optional/dogfood/adversarial-ux-test/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "agent-merge-conflict-arbiter",
+    "description": "Neutral arbiter for merge conflicts between two agents.",
+    "path": "skills/optional/autonomous-ai-agents/agent-merge-conflict-arbiter/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "agentmail",
+    "description": "Use when an agent needs AgentMail CLI email inboxes.",
+    "path": "skills/optional/email/agentmail/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "airtable",
+    "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+    "path": "skills/active/productivity/airtable/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "anonymous-paper-submission",
+    "description": "Prepare double-blind paper submissions and supplementary ZIPs without identity leaks.",
+    "path": "skills/active/research/anonymous-paper-submission/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "antigravity-cli",
+    "description": "Operate the Antigravity CLI (agy): plugins, auth, sandbox.",
+    "path": "skills/optional/autonomous-ai-agents/antigravity-cli/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "apple-notes",
+    "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+    "path": "skills/active/apple/apple-notes/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "apple-reminders",
+    "description": "Apple Reminders via remindctl: add, list, complete.",
+    "path": "skills/active/apple/apple-reminders/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "architecture-contract-development",
+    "description": "Preserve user-stated architecture boundaries during implementation; encode corrections as public API tests instead of generic abstractions.",
+    "path": "skills/active/software-development/architecture-contract-development/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "architecture-diagram",
+    "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+    "path": "skills/active/creative/architecture-diagram/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "arxiv",
+    "description": "Search arXiv papers by keyword, author, category, or ID.",
+    "path": "skills/active/research/arxiv/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ascii-art",
+    "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+    "path": "skills/active/creative/ascii-art/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ascii-video",
+    "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+    "path": "skills/active/creative/ascii-video/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ast-grep",
+    "description": "AST-aware structural code search and rewrite via ast-grep.",
+    "path": "skills/optional/software-development/ast-grep/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "audiocraft-audio-generation",
+    "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+    "path": "skills/active/mlops/models/audiocraft/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "axolotl",
+    "description": "Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).",
+    "path": "skills/optional/mlops/training/axolotl/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "baoyu-article-illustrator",
+    "description": "Article illustrations: type × style × palette consistency.",
+    "path": "skills/optional/creative/baoyu-article-illustrator/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "baoyu-comic",
+    "description": "Knowledge comics (知识漫画): educational, biography, tutorial.",
+    "path": "skills/optional/creative/baoyu-comic/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "baoyu-infographic",
+    "description": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
+    "path": "skills/active/creative/baoyu-infographic/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "bioinformatics",
+    "description": "Gateway to 400+ genomics and computational biology skills.",
+    "path": "skills/optional/research/bioinformatics/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "blackbox",
+    "description": "Delegate coding tasks to the Blackbox AI multi-model CLI.",
+    "path": "skills/optional/autonomous-ai-agents/blackbox/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "blocked-page-recovery",
+    "description": "Use when a fetch fails: 403/429, paywall, WAF, bot wall.",
+    "path": "skills/active/web/blocked-page-recovery/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "blogwatcher",
+    "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+    "path": "skills/active/research/blogwatcher/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "box",
+    "description": "Box manages cloud files, sharing, search, and metadata.",
+    "path": "skills/active/productivity/box/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "canvas",
+    "description": "Fetch Canvas LMS courses and assignments via API token.",
+    "path": "skills/optional/productivity/canvas/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "chroma",
+    "description": "Embedding database for RAG and semantic search.",
+    "path": "skills/optional/mlops/chroma/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "claude-code",
+    "description": "Delegate coding to Claude Code CLI (features, PRs).",
+    "path": "skills/active/autonomous-ai-agents/claude-code/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "claude-design",
+    "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+    "path": "skills/active/creative/claude-design/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "clip",
+    "description": "Zero-shot image classification and image-text search.",
+    "path": "skills/optional/mlops/clip/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "cloudflare-temporary-deploy",
+    "description": "Deploy a Worker live, no account, via wrangler --temporary.",
+    "path": "skills/optional/web-development/cloudflare-temporary-deploy/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "code-wiki",
+    "description": "Generate wiki docs + Mermaid diagrams for any codebase.",
+    "path": "skills/optional/software-development/code-wiki/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "codebase-inspection",
+    "description": "Inspect codebases w/ pygount: LOC, languages, ratios.",
+    "path": "skills/active/software-development/codebase-inspection/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "codex",
+    "description": "Delegate coding to OpenAI Codex CLI (features, PRs).",
+    "path": "skills/active/autonomous-ai-agents/codex/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "comfyui",
+    "description": "Generate images, video, and audio via diffusion workflows.",
+    "path": "skills/active/creative/comfyui/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "competitor-news-monitor",
+    "description": "Watch named companies for material news; cited digests.",
+    "path": "skills/active/research/competitor-news-monitor/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "comps-analysis",
+    "description": "Build comparable-company valuation workbooks in Excel.",
+    "path": "skills/optional/finance/comps-analysis/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "computer-use",
+    "description": "Drive the desktop background-first; escalate on signal.",
+    "path": "skills/active/autonomous-ai-agents/computer-use/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "concept-diagrams",
+    "description": "Generate flat, minimal educational SVG visuals as HTML.",
+    "path": "skills/optional/creative/concept-diagrams/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "creative-ideation",
+    "description": "Generate ideas via named methods from creative practice.",
+    "path": "skills/optional/creative/creative-ideation/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "darwinian-evolver",
+    "description": "Evolve prompts/regex/SQL/code with Imbue's evolution loop.",
+    "path": "skills/optional/research/darwinian-evolver/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "dcf-model",
+    "description": "Build discounted cash flow valuation workbooks in Excel.",
+    "path": "skills/optional/finance/dcf-model/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "decision-questionnaire",
+    "description": "Turn an unanswerable decision into a questionnaire doc.",
+    "path": "skills/optional/productivity/decision-questionnaire/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "design-md",
+    "description": "Author/validate/export Google's DESIGN.md token spec files.",
+    "path": "skills/active/creative/design-md/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "docker-management",
+    "description": "Manage Docker containers, images, volumes, and Compose.",
+    "path": "skills/optional/devops/docker-management/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "document-to-action-items",
+    "description": "Extract cited obligations, deadlines, tasks from documents.",
+    "path": "skills/active/productivity/document-to-action-items/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "docx",
+    "description": "Create, read, edit, template, and review Word .docx files.",
+    "path": "skills/active/productivity/docx/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "dogfood",
+    "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+    "path": "skills/active/software-development/dogfood/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "domain-intel",
+    "description": "Passive recon of subdomains, SSL certs, WHOIS, and DNS.",
+    "path": "skills/optional/research/domain-intel/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "draw-your-font",
+    "description": "Turn a handwriting photo into an installable TTF font.",
+    "path": "skills/optional/creative/draw-your-font/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "drug-discovery",
+    "description": "Drug discovery: ChEMBL search, drug-likeness, interactions.",
+    "path": "skills/optional/research/drug-discovery/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "dspy",
+    "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+    "path": "skills/optional/mlops/research/dspy/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "duckduckgo-search",
+    "description": "Free keyless web, news, and image search via ddgs.",
+    "path": "skills/optional/research/duckduckgo-search/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "email-inbox-triage",
+    "description": "Triage an inbox: prioritize threads, draft replies safely.",
+    "path": "skills/active/email/email-inbox-triage/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "evaluating-llms-harness",
+    "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).",
+    "path": "skills/active/mlops/evaluation/evaluating-llms-harness/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "evm",
+    "description": "Read-only EVM client: wallets, tokens, gas across 8 chains.",
+    "path": "skills/optional/blockchain/evm/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "excalidraw",
+    "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+    "path": "skills/active/creative/excalidraw/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "excel-author",
+    "description": "Build auditable financial workbooks headless via openpyxl.",
+    "path": "skills/optional/finance/excel-author/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "faiss",
+    "description": "Fast vector similarity search at billion scale.",
+    "path": "skills/optional/mlops/faiss/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "fastmcp",
+    "description": "Build, test, and deploy Python MCP servers.",
+    "path": "skills/optional/mcp/fastmcp/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "findmy",
+    "description": "Track Apple devices/AirTags via FindMy.app on macOS.",
+    "path": "skills/active/apple/findmy/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "fitness-nutrition",
+    "description": "Workout planning, macros, and body metrics via wger/USDA.",
+    "path": "skills/optional/health/fitness-nutrition/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "flash-attention",
+    "description": "Speed up long-sequence transformer training and inference.",
+    "path": "skills/optional/mlops/flash-attention/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "gif-search",
+    "description": "Search/download GIFs from Tenor via curl + jq.",
+    "path": "skills/active/media/gif-search/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github",
+    "description": "GitHub via gh CLI: PRs, issues, reviews, repos, auth.",
+    "path": "skills/active/software-development/github/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github-auth",
+    "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.",
+    "path": "skills/active/github/github-auth/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github-code-review",
+    "description": "Review PRs: diffs, inline comments via gh or REST.",
+    "path": "skills/active/github/github-code-review/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github-issue-to-pr",
+    "description": "Carry a GitHub issue to a verified PR with honest CI state.",
+    "path": "skills/active/github/github-issue-to-pr/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github-issues",
+    "description": "Create, triage, label, assign GitHub issues via gh or REST.",
+    "path": "skills/active/github/github-issues/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github-pr-workflow",
+    "description": "GitHub PR lifecycle: branch, commit, open, CI, merge.",
+    "path": "skills/active/github/github-pr-workflow/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "github-repo-management",
+    "description": "Clone/create/fork repos; manage remotes, releases.",
+    "path": "skills/active/github/github-repo-management/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "gitnexus-explorer",
+    "description": "Serve an interactive codebase knowledge graph web UI.",
+    "path": "skills/optional/research/gitnexus-explorer/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "godmode",
+    "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+    "path": "skills/optional/security/godmode/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "google-workspace",
+    "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+    "path": "skills/active/productivity/google-workspace/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "gpu-training-debugging",
+    "description": "Diagnose numerical failures and throughput regressions in paid GPU training runs using cost-aware, falsifiable differential experiments before committing to full-budget runs.",
+    "path": "skills/active/mlops-evaluation/gpu-training-debugging/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "grill-me",
+    "description": "Adversarial plan interview before implementation.",
+    "path": "skills/optional/software-development/grill-me/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "grok",
+    "description": "Delegate coding to xAI Grok Build CLI (features, PRs).",
+    "path": "skills/optional/autonomous-ai-agents/grok/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "grounded-citations",
+    "description": "Ground answers and documents in cited, verifiable sources.",
+    "path": "skills/active/research/grounded-citations/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "guidance",
+    "description": "Constrain LLM output with grammars; guarantee valid JSON.",
+    "path": "skills/optional/mlops/guidance/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "har-derived-api-client",
+    "description": "Record a site's XHR into a HAR, derive an HTTP client.",
+    "path": "skills/optional/web-development/har-derived-api-client/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "heartmula",
+    "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+    "path": "skills/active/media/heartmula/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "here-now",
+    "description": "Publish sites to {slug}.here.now and store files in Drives.",
+    "path": "skills/optional/productivity/here-now/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "himalaya",
+    "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+    "path": "skills/active/email/himalaya/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "huggingface-hub",
+    "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+    "path": "skills/active/mlops/huggingface-hub/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "huggingface-tokenizers",
+    "description": "Fast BPE/WordPiece tokenization and custom vocab training.",
+    "path": "skills/optional/mlops/huggingface-tokenizers/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "humanizer",
+    "description": "Humanize text: strip AI-isms and add real voice.",
+    "path": "skills/active/creative/humanizer/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "hyperframes",
+    "description": "Render MP4/WebM videos from HTML compositions.",
+    "path": "skills/optional/creative/hyperframes/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "hyperliquid",
+    "description": "Hyperliquid market data, account history, trade review.",
+    "path": "skills/optional/blockchain/hyperliquid/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "imessage",
+    "description": "Send and receive iMessages/SMS via the imsg CLI on macOS.",
+    "path": "skills/active/apple/imessage/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "impeccable",
+    "description": "Frontend design guidance, upstream-maintained (impeccable).",
+    "path": "skills/optional/creative/impeccable/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "inference-sh-cli",
+    "description": "Run 150+ AI apps (image, video, LLM) via inference.sh CLI.",
+    "path": "skills/optional/devops/inference-sh-cli/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "instructor",
+    "description": "Structured LLM outputs validated with Pydantic.",
+    "path": "skills/optional/mlops/instructor/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "jupyter-live-kernel",
+    "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+    "path": "skills/active/data-science/jupyter-live-kernel/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "jupyter-notebook",
+    "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+    "path": "skills/optional/data-science/jupyter-notebook/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "lambda-labs",
+    "description": "On-demand GPU cloud instances for ML training.",
+    "path": "skills/optional/mlops/lambda-labs/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "lbo-model",
+    "description": "Build leveraged buyout workbooks with IRR/MOIC in Excel.",
+    "path": "skills/optional/finance/lbo-model/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "llama-cpp",
+    "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+    "path": "skills/active/mlops/inference/llama-cpp/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "llava",
+    "description": "Vision-language chat: VQA, captioning, image dialogue.",
+    "path": "skills/optional/mlops/llava/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "llm-wiki",
+    "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+    "path": "skills/active/research/llm-wiki/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "local-webapp-audit",
+    "description": "Audit and improve a local web application repository: code health, build safety, browser QA, and verification.",
+    "path": "skills/active/software-development/local-webapp-audit/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "macos-computer-use",
+    "description": "Drive the macOS desktop in the background — screenshots, mouse, keyboard,\nscroll, drag — without stealing the user's cursor, keyboard focus, or\nSpace. Works with any tool-capable model. Load this skill whenever the\n`computer_use` tool is available.",
+    "path": "skills/active/apple/macos-computer-use/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "macos-printer-scanner-support",
+    "description": "Use when macOS printers or scanners will not connect.",
+    "path": "skills/active/apple/macos-printer-scanner-support/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "manim-video",
+    "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+    "path": "skills/active/creative/manim-video/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "maps",
+    "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+    "path": "skills/active/productivity/maps/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "mcp-oauth-remote-gateway",
+    "description": "Manual OAuth for remote MCP servers on headless gateways.",
+    "path": "skills/optional/mcp/mcp-oauth-remote-gateway/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "mcporter",
+    "description": "List, auth, and call MCP servers/tools from the terminal.",
+    "path": "skills/optional/mcp/mcporter/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "meeting-action-items",
+    "description": "Turn meeting notes into cited decisions, owners, tickets.",
+    "path": "skills/active/productivity/meeting-action-items/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "meme-generation",
+    "description": "Create meme PNGs from templates with Pillow text overlay.",
+    "path": "skills/optional/creative/meme-generation/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "memento-flashcards",
+    "description": "Spaced-repetition flashcards: create, review, quiz, export.",
+    "path": "skills/optional/productivity/memento-flashcards/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "merge-reconciler",
+    "description": "Neutral third-party resolution of agent merge conflicts.",
+    "path": "skills/active/autonomous-ai-agents/merge-reconciler/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "merger-model",
+    "description": "Build M&A accretion/dilution workbooks in Excel.",
+    "path": "skills/optional/finance/merger-model/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "minecraft-modpack-server",
+    "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
+    "path": "skills/optional/gaming/minecraft-modpack-server/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ml-ablation-debugging",
+    "description": "Design, run, and debug ML architecture ablations with clean controls, especially routing/MoE experiments.",
+    "path": "skills/active/mlops-evaluation/ml-ablation-debugging/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ml-ablation-experiments",
+    "description": "Design, implement, and verify ML ablation suites with clean controls, matched budgets, and reproducible launchers.",
+    "path": "skills/active/mlops/ml-ablation-experiments/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ml-architecture-review",
+    "description": "Review ML/AI architecture claims and turn them into defensible model definitions, baselines, and experiment plans.",
+    "path": "skills/active/research/ml-architecture-review/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "ml-research-validation",
+    "description": "Validate causal sequence-model implementations and GPU experiments from code invariants through matched controls, provenance, and reviewer-ready evidence.",
+    "path": "skills/active/mlops-evaluation/ml-research-validation/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "modal",
+    "description": "Serverless GPU cloud for ML jobs and model APIs.",
+    "path": "skills/optional/mlops/modal/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "mpp-agent",
+    "description": "Pay HTTP 402 APIs via Machine Payments Protocol (MPP).",
+    "path": "skills/optional/payments/mpp-agent/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "nano-pdf",
+    "description": "Edit text in existing PDFs via natural-language prompts.",
+    "path": "skills/active/productivity/nano-pdf/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "nemo-curator",
+    "description": "Curate LLM training data: dedupe, filter, PII redaction.",
+    "path": "skills/optional/mlops/nemo-curator/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "neuroskill-bci",
+    "description": "Use live BCI cognitive and mood state from NeuroSkill.",
+    "path": "skills/optional/health/neuroskill-bci/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "node-inspect-debugger",
+    "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI.",
+    "path": "skills/active/software-development/node-inspect-debugger/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "notion",
+    "description": "Notion API + ntn CLI: pages, databases, markdown, Workers.",
+    "path": "skills/active/productivity/notion/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "obliteratus",
+    "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+    "path": "skills/optional/mlops/obliteratus/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "obsidian",
+    "description": "Read, search, create, and edit notes in the Obsidian vault.",
+    "path": "skills/active/note-taking/obsidian/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "ocr-and-documents",
+    "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+    "path": "skills/active/productivity/ocr-and-documents/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "one-three-one-rule",
+    "description": "1-3-1 decision briefs: problem, three options, one pick.",
+    "path": "skills/optional/communication/one-three-one-rule/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "opencode",
+    "description": "Delegate coding to OpenCode CLI (features, PR review).",
+    "path": "skills/active/autonomous-ai-agents/opencode/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "openhands",
+    "description": "Delegate coding to OpenHands CLI (model-agnostic, LiteLLM).",
+    "path": "skills/optional/autonomous-ai-agents/openhands/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "openhue",
+    "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+    "path": "skills/active/smart-home/openhue/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "osint-investigation",
+    "description": "Follow the money via public records and sanctions data.",
+    "path": "skills/optional/research/osint-investigation/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "oss-forensics",
+    "description": "GitHub supply-chain forensics: recovery, IOCs, reporting.",
+    "path": "skills/optional/security/oss-forensics/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "outlines",
+    "description": "Outlines: structured JSON/regex/Pydantic LLM generation.",
+    "path": "skills/optional/mlops/inference/outlines/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "p5js",
+    "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+    "path": "skills/active/creative/p5js/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "page-agent",
+    "description": "Embed an in-page natural-language GUI copilot in web apps.",
+    "path": "skills/optional/web-development/page-agent/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "paid-gpu-architecture-evaluation",
+    "description": "Run controlled ML architecture comparisons on paid accelerators with fail-closed numerics, matched throughput, checkpoints, ablations, and cost-aware sequencing.",
+    "path": "skills/active/mlops-evaluation/paid-gpu-architecture-evaluation/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "parallel-cli",
+    "description": "Agent-native web search, deep research, and enrichment.",
+    "path": "skills/optional/research/parallel-cli/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pdf",
+    "description": "PDF files: create, read, merge, fill, OCR, edit text.",
+    "path": "skills/active/productivity/pdf/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "peft",
+    "description": "Fine-tune large LLMs with LoRA on limited GPU memory.",
+    "path": "skills/optional/mlops/peft/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pinecone",
+    "description": "Managed vector DB for production RAG and search.",
+    "path": "skills/optional/mlops/pinecone/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pinecone-research",
+    "description": "Agent RAG and long-term memory with Pinecone.",
+    "path": "skills/optional/research/pinecone-research/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pinggy-tunnel",
+    "description": "Zero-install localhost tunnels over SSH via Pinggy.",
+    "path": "skills/optional/devops/pinggy-tunnel/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pixel-art",
+    "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
+    "path": "skills/optional/creative/pixel-art/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "plan",
+    "description": "Write a markdown plan to .pi/plans/; no execution.",
+    "path": "skills/active/software-development/plan/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pokemon-player",
+    "description": "Play Pokemon via headless emulator + RAM reads.",
+    "path": "skills/optional/gaming/pokemon-player/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "polymarket",
+    "description": "Query Polymarket: markets, prices, orderbooks, history.",
+    "path": "skills/active/research/polymarket/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "popular-web-designs",
+    "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+    "path": "skills/active/creative/popular-web-designs/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "powerpoint",
+    "description": "Create, read, edit .pptx decks with python-pptx.",
+    "path": "skills/active/productivity/powerpoint/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pptx-author",
+    "description": "Build PowerPoint decks headless with python-pptx.",
+    "path": "skills/optional/finance/pptx-author/SKILL.md",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "pretext",
+    "description": "Build creative browser demos with DOM-free text layout.",
+    "path": "skills/active/creative/pretext/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "product-price-monitor",
+    "description": "Watch product, flight, or listing prices; alert on target.",
+    "path": "skills/active/productivity/product-price-monitor/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "proprietary-desktop-ai-clients",
+    "description": "Build proprietary desktop AI clients distributed as native installers, with secure hosted-model boundaries, streaming chat, packaging, visual identity, and release verification. Use when requests mention a closed/private AI client, Electron app, npm-distributed desktop client, macOS DMG, or a branded assistant UI.",
+    "path": "skills/active/software-development/proprietary-desktop-ai-clients/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "proprietary-electron-client-development",
+    "description": "Build and iterate private, standalone Electron AI clients distributed as macOS apps/DMGs rather than web deployments or generic SDKs. Covers product-boundary clarification, secure Electron architecture, streaming chat UX, proprietary packaging, visual QA, icon pipelines, and artifact verification.",
+    "path": "skills/active/software-development/proprietary-electron-client-development/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "publish-site",
+    "description": "Versioned site deploys to GitHub/Cloudflare/Netlify Pages.",
+    "path": "skills/optional/web-development/publish-site/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "python-debugpy",
+    "description": "Debug Python: pdb REPL + debugpy remote (DAP).",
+    "path": "skills/active/software-development/python-debugpy/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pytorch-fsdp",
+    "description": "Fully sharded data-parallel training for large models.",
+    "path": "skills/optional/mlops/pytorch-fsdp/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "pytorch-lightning",
+    "description": "Clean training loops with built-in distributed support.",
+    "path": "skills/optional/mlops/pytorch-lightning/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "qdrant",
+    "description": "Vector search engine for production RAG systems.",
+    "path": "skills/optional/mlops/qdrant/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "qmd",
+    "description": "Hybrid local search over notes, docs, and transcripts.",
+    "path": "skills/optional/research/qmd/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "requesting-code-review",
+    "description": "Pre-commit review: security scan, quality gates, auto-fix.",
+    "path": "skills/active/software-development/requesting-code-review/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "research-paper-writing",
+    "description": "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
+    "path": "skills/active/research/research-paper-writing/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "rest-graphql-debug",
+    "description": "Debug REST/GraphQL APIs: status codes, auth, schemas, repro.",
+    "path": "skills/optional/software-development/rest-graphql-debug/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "saelens",
+    "description": "Train sparse autoencoders to interpret model features.",
+    "path": "skills/optional/mlops/saelens/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "scrapling",
+    "description": "Scrape sites with stealth browsing and Cloudflare bypass.",
+    "path": "skills/optional/research/scrapling/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "sdlc-review",
+    "description": "Review Kanban handoffs and route verified outcomes.",
+    "path": "skills/active/devops/sdlc-review/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "searxng-search",
+    "description": "Free keyless meta-search aggregating 70+ engines.",
+    "path": "skills/optional/research/searxng-search/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "segment-anything-model",
+    "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+    "path": "skills/active/mlops/models/segment-anything/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "serving-llms-vllm",
+    "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+    "path": "skills/active/mlops/inference/serving-llms-vllm/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "session-librarian",
+    "description": "Organize sessions by prompt: find, rename, archive, prune.",
+    "path": "skills/active/productivity/session-librarian/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "setup-wizard-generator",
+    "description": "Generate a bash wizard guiding a human through manual setup.",
+    "path": "skills/optional/devops/setup-wizard-generator/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "sherlock",
+    "description": "Find accounts for a username across 400+ platforms.",
+    "path": "skills/optional/security/sherlock/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "shop",
+    "description": "Shop catalog search, checkout, order tracking, returns.",
+    "path": "skills/optional/productivity/shop/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "shopify",
+    "description": "Query Shopify Admin/Storefront GraphQL APIs via curl.",
+    "path": "skills/optional/productivity/shopify/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "simple-english",
+    "description": "Rewrite text to ASD-STE100 Simplified Technical English.",
+    "path": "skills/optional/creative/simple-english/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "simplify-code",
+    "description": "Parallel 4-agent cleanup of recent code changes.",
+    "path": "skills/active/software-development/simplify-code/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "simpo",
+    "description": "Reference-free preference alignment, simpler than DPO.",
+    "path": "skills/optional/mlops/simpo/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "siyuan",
+    "description": "Query and edit a SiYuan knowledge base via its API.",
+    "path": "skills/optional/productivity/siyuan/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "sketch",
+    "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+    "path": "skills/active/creative/sketch/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "slime",
+    "description": "RL post-training for LLMs with Megatron and SGLang.",
+    "path": "skills/optional/mlops/slime/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "social-media-content-calendar",
+    "description": "Plan multi-platform social campaigns: briefs to posting.",
+    "path": "skills/optional/creative/social-media-content-calendar/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "solana",
+    "description": "Query Solana wallets, tokens, txs, and NFTs in USD.",
+    "path": "skills/optional/blockchain/solana/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "songsee",
+    "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+    "path": "skills/active/media/songsee/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "songwriting-and-ai-music",
+    "description": "Songwriting craft and Suno AI music prompts.",
+    "path": "skills/active/creative/songwriting-and-ai-music/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "spike",
+    "description": "Throwaway experiments to validate an idea before build.",
+    "path": "skills/active/software-development/spike/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "stable-diffusion",
+    "description": "Text-to-image generation, inpainting, and img2img.",
+    "path": "skills/optional/mlops/stable-diffusion/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "stateful-attention-free-serving",
+    "description": "Build and validate production inference backends for attention-free causal models with fixed-size per-request state, including prefill/decode APIs, scheduler integration, CUDA Graph capture, packaging, and framework-equivalence tests.",
+    "path": "skills/active/mlops/stateful-attention-free-serving/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "stocks",
+    "description": "Stock quotes, history, search, compare, crypto via Yahoo.",
+    "path": "skills/optional/finance/stocks/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "stripe-link-cli",
+    "description": "Agent payments via Stripe Link — cards, SPT, approvals.",
+    "path": "skills/optional/payments/stripe-link-cli/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "stripe-projects",
+    "description": "Provision SaaS services + sync creds via Stripe Projects.",
+    "path": "skills/optional/payments/stripe-projects/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "subagent-driven-development",
+    "description": "Execute plans via delegate_task subagents (2-stage review).",
+    "path": "skills/optional/software-development/subagent-driven-development/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "systematic-debugging",
+    "description": "4-phase root cause debugging: understand bugs before fixing.",
+    "path": "skills/active/software-development/systematic-debugging/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "teams-meeting-pipeline",
+    "description": "Teams meeting summaries, job replay, Graph subscriptions.",
+    "path": "skills/active/productivity/teams-meeting-pipeline/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "telephony",
+    "description": "Provision Twilio numbers, SMS/MMS, and AI outbound calls.",
+    "path": "skills/optional/productivity/telephony/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "tensorrt-llm",
+    "description": "High-throughput LLM inference on NVIDIA GPUs.",
+    "path": "skills/optional/mlops/tensorrt-llm/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "test-driven-development",
+    "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+    "path": "skills/active/software-development/test-driven-development/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "tldraw-offline",
+    "description": "Drive and script tldraw offline canvases with an agent.",
+    "path": "skills/optional/creative/tldraw-offline/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "token-routed-multimodal-architecture",
+    "description": "Design and implement Token-Routed multimodal/any-to-any architectures with deterministic routing, Zipf balancing, target queries, and universal shared experts.",
+    "path": "skills/active/mlops-models/token-routed-multimodal-architecture/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "tool-using-controller",
+    "description": "Build tool-use integrations around official MCP servers/SDK for Complexity lexical/Token-Routed models; avoid custom generic controller runtimes.",
+    "path": "skills/active/autonomous-ai-agents/tool-using-controller/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "torchtitan",
+    "description": "Pretrain LLMs at scale with PyTorch 4D parallelism.",
+    "path": "skills/optional/mlops/torchtitan/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "touchdesigner-mcp",
+    "description": "Control TouchDesigner via twozero MCP.",
+    "path": "skills/active/creative/touchdesigner-mcp/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "tr-hash-evaluation",
+    "description": "Use when evaluating TR-Hash. Enforce native protocols.",
+    "path": "skills/active/mlops-evaluation/tr-hash-evaluation/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "training-telemetry-contracts",
+    "description": "Design architecture-aware training logs and control curricula through module-declared capabilities instead of trainer-side model-type conditionals.",
+    "path": "skills/active/software-development/training-telemetry-contracts/SKILL.md",
+    "license": "Unspecified — review required"
+  },
+  {
+    "name": "trl-fine-tuning",
+    "description": "TRL: SFT, DPO, GRPO, RLOO reward modeling for LLM RLHF.",
+    "path": "skills/optional/mlops/training/trl-fine-tuning/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "unbroker",
+    "description": "Autonomously remove your info from data-broker sites.",
+    "path": "skills/optional/security/unbroker/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "unreal-mcp",
+    "description": "Automate Unreal Engine editor scenes, actors, and renders.",
+    "path": "skills/optional/creative/unreal-mcp/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "unsloth",
+    "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.",
+    "path": "skills/optional/mlops/training/unsloth/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "watchers",
+    "description": "Poll RSS, JSON APIs, and GitHub with watermark dedup.",
+    "path": "skills/optional/devops/watchers/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "web-pentest",
+    "description": "Authorized web pentest: recon, proof-based exploits, report.",
+    "path": "skills/optional/security/web-pentest/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "weekly-review-planning",
+    "description": "Weekly reset: commitments, stalled work, next-week plan.",
+    "path": "skills/active/productivity/weekly-review-planning/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "weights-and-biases",
+    "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+    "path": "skills/active/mlops/evaluation/weights-and-biases/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "whisper",
+    "description": "Transcribe and translate speech in 99 languages.",
+    "path": "skills/optional/mlops/whisper/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "xlsx",
+    "description": "Create, read, edit Excel .xlsx workbooks and CSVs.",
+    "path": "skills/active/productivity/xlsx/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "xurl",
+    "description": "X/Twitter via xurl CLI: raw post search, posting, DM, media.",
+    "path": "skills/active/social-media/xurl/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "youtube-content",
+    "description": "YouTube transcripts to summaries, threads, blogs.",
+    "path": "skills/active/media/youtube-content/SKILL.md",
+    "license": "MIT"
+  },
+  {
+    "name": "yuanbao",
+    "description": "Yuanbao (元宝) groups: @mention users, query info/members.",
+    "path": "skills/active/yuanbao/SKILL.md",
+    "license": "MIT"
+  }
+]
