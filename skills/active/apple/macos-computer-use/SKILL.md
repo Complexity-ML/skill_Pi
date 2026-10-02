@@ -26,6 +26,9 @@ metadata:
     version: 1
     source: Hermes local skills
     runtime_verified: false
+  copyright: Copyright (c) 2026 Complexity-ML
+  ownership: Owner-confirmed original skill, generated with GPT in Hermes for Complexity-ML
+license: MIT
 ---
 
 ## Pi compatibility

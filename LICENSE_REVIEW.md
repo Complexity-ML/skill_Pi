@@ -7,9 +7,9 @@
 
 Source repository: https://github.com/NousResearch/hermes-agent . Compared against local tracked commit `71f8c60f6a6ab8f2fab1e4d5c22d6dd9c856b63e` and the live upstream main tree. Repository license: MIT, copyright 2025 Nous Research. Preserved notice: `licenses/Hermes-MIT.txt`.
 
-## Unresolved: 13
+## Owner-confirmed original work, licensed MIT: 13
 
-These names were not found in the checked upstream tree or local tracked Hermes commit. No skill-local license/notice/attribution files were found. They appear to be local additions, but authorship and permission cannot be established from their location alone.
+These names were not found in the checked upstream tree or local tracked Hermes commit. The repository owner subsequently confirmed that these are their own skills generated with GPT in Hermes, and explicitly authorized MIT licensing with Copyright (c) 2026 Complexity-ML. MIT license texts have been added to each skill directory.
 
 - gpu-training-debugging
 - local-webapp-audit
@@ -25,4 +25,4 @@ These names were not found in the checked upstream tree or local tracked Hermes 
 - tr-hash-evaluation
 - training-telemetry-contracts
 
-Do not assign these an upstream MIT license without evidence. If they are original work owned by the repository owner, the owner may choose a license, subject to any third-party content. Otherwise obtain the author's permission or exclude them before public redistribution. This review does not audit every bundled asset or establish legal ownership.
+These 13 skills use the owner's MIT license, not an inferred upstream Hermes license. Any bundled third-party material retains its original terms. This review records the owner's assertion and authorization; it does not independently establish legal ownership or audit every bundled asset.

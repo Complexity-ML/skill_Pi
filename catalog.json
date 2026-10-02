@@ -459,7 +459,7 @@
     "name": "gpu-training-debugging",
     "description": "Diagnose numerical failures and throughput regressions in paid GPU training runs using cost-aware, falsifiable differential experiments before committing to full-budget runs.",
     "path": "skills/active/mlops-evaluation/gpu-training-debugging/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "grill-me",
@@ -609,19 +609,19 @@
     "name": "local-webapp-audit",
     "description": "Audit and improve a local web application repository: code health, build safety, browser QA, and verification.",
     "path": "skills/active/software-development/local-webapp-audit/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "macos-computer-use",
     "description": "Drive the macOS desktop in the background — screenshots, mouse, keyboard,\nscroll, drag — without stealing the user's cursor, keyboard focus, or\nSpace. Works with any tool-capable model. Load this skill whenever the\n`computer_use` tool is available.",
     "path": "skills/active/apple/macos-computer-use/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "macos-printer-scanner-support",
     "description": "Use when macOS printers or scanners will not connect.",
     "path": "skills/active/apple/macos-printer-scanner-support/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "manim-video",
@@ -699,7 +699,7 @@
     "name": "ml-architecture-review",
     "description": "Review ML/AI architecture claims and turn them into defensible model definitions, baselines, and experiment plans.",
     "path": "skills/active/research/ml-architecture-review/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "ml-research-validation",
@@ -825,7 +825,7 @@
     "name": "paid-gpu-architecture-evaluation",
     "description": "Run controlled ML architecture comparisons on paid accelerators with fail-closed numerics, matched throughput, checkpoints, ablations, and cost-aware sequencing.",
     "path": "skills/active/mlops-evaluation/paid-gpu-architecture-evaluation/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "parallel-cli",
@@ -921,13 +921,13 @@
     "name": "proprietary-desktop-ai-clients",
     "description": "Build proprietary desktop AI clients distributed as native installers, with secure hosted-model boundaries, streaming chat, packaging, visual identity, and release verification. Use when requests mention a closed/private AI client, Electron app, npm-distributed desktop client, macOS DMG, or a branded assistant UI.",
     "path": "skills/active/software-development/proprietary-desktop-ai-clients/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "proprietary-electron-client-development",
     "description": "Build and iterate private, standalone Electron AI clients distributed as macOS apps/DMGs rather than web deployments or generic SDKs. Covers product-boundary clarification, secure Electron architecture, streaming chat UX, proprietary packaging, visual QA, icon pipelines, and artifact verification.",
     "path": "skills/active/software-development/proprietary-electron-client-development/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "publish-site",
@@ -1125,7 +1125,7 @@
     "name": "stateful-attention-free-serving",
     "description": "Build and validate production inference backends for attention-free causal models with fixed-size per-request state, including prefill/decode APIs, scheduler integration, CUDA Graph capture, packaging, and framework-equivalence tests.",
     "path": "skills/active/mlops/stateful-attention-free-serving/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "stocks",
@@ -1191,13 +1191,13 @@
     "name": "token-routed-multimodal-architecture",
     "description": "Design and implement Token-Routed multimodal/any-to-any architectures with deterministic routing, Zipf balancing, target queries, and universal shared experts.",
     "path": "skills/active/mlops-models/token-routed-multimodal-architecture/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "tool-using-controller",
     "description": "Build tool-use integrations around official MCP servers/SDK for Complexity lexical/Token-Routed models; avoid custom generic controller runtimes.",
     "path": "skills/active/autonomous-ai-agents/tool-using-controller/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "torchtitan",
@@ -1215,13 +1215,13 @@
     "name": "tr-hash-evaluation",
     "description": "Use when evaluating TR-Hash. Enforce native protocols.",
     "path": "skills/active/mlops-evaluation/tr-hash-evaluation/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "training-telemetry-contracts",
     "description": "Design architecture-aware training logs and control curricula through module-declared capabilities instead of trainer-side model-type conditionals.",
     "path": "skills/active/software-development/training-telemetry-contracts/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "trl-fine-tuning",
