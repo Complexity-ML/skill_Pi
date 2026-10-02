@@ -495,7 +495,7 @@
     "name": "heartmula",
     "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
     "path": "skills/active/media/heartmula/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "here-now",
@@ -885,7 +885,7 @@
     "name": "polymarket",
     "description": "Query Polymarket: markets, prices, orderbooks, history.",
     "path": "skills/active/research/polymarket/SKILL.md",
-    "license": "Unspecified — review required"
+    "license": "MIT"
   },
   {
     "name": "popular-web-designs",

@@ -1,7 +1,9 @@
 ---
 name: polymarket
+license: MIT
 description: 'Query Polymarket: markets, prices, orderbooks, history.'
 metadata:
+  upstream: https://github.com/NousResearch/hermes-agent/blob/main/optional-skills/finance/polymarket/SKILL.md
   hermes_frontmatter:
     version: 1.0.0
     author: Hermes Agent + Teknium

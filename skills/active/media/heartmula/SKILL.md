@@ -1,7 +1,10 @@
 ---
 name: heartmula
+license: MIT
 description: 'HeartMuLa: Suno-like song generation from lyrics + tags.'
 metadata:
+  original_author: Teknium (teknium1), Hermes Agent
+  upstream: https://github.com/NousResearch/hermes-agent/blob/main/optional-skills/creative/heartmula/SKILL.md
   hermes:
     tags:
     - music
