@@ -2,37 +2,37 @@
   {
     "name": "1password",
     "description": "Set up op CLI, sign in, and read or inject secrets.",
-    "path": "skills/optional/security/1password/SKILL.md",
+    "path": "skills/active/security/1password/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "3-statement-model",
     "description": "Build integrated IS/BS/CF financial workbooks in Excel.",
-    "path": "skills/optional/finance/3-statement-model/SKILL.md",
+    "path": "skills/active/finance/3-statement-model/SKILL.md",
     "license": "Apache-2.0"
   },
   {
     "name": "accelerate",
     "description": "Run PyTorch training across GPUs with minimal changes.",
-    "path": "skills/optional/mlops/accelerate/SKILL.md",
+    "path": "skills/active/mlops/accelerate/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "adversarial-ux-test",
     "description": "Roleplay a hostile user to find and triage UX pain points.",
-    "path": "skills/optional/dogfood/adversarial-ux-test/SKILL.md",
+    "path": "skills/active/dogfood/adversarial-ux-test/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "agent-merge-conflict-arbiter",
     "description": "Neutral arbiter for merge conflicts between two agents.",
-    "path": "skills/optional/autonomous-ai-agents/agent-merge-conflict-arbiter/SKILL.md",
+    "path": "skills/active/autonomous-ai-agents/agent-merge-conflict-arbiter/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "agentmail",
     "description": "Use when an agent needs AgentMail CLI email inboxes.",
-    "path": "skills/optional/email/agentmail/SKILL.md",
+    "path": "skills/active/email/agentmail/SKILL.md",
     "license": "MIT"
   },
   {
@@ -50,7 +50,7 @@
   {
     "name": "antigravity-cli",
     "description": "Operate the Antigravity CLI (agy): plugins, auth, sandbox.",
-    "path": "skills/optional/autonomous-ai-agents/antigravity-cli/SKILL.md",
+    "path": "skills/active/autonomous-ai-agents/antigravity-cli/SKILL.md",
     "license": "MIT"
   },
   {
@@ -98,7 +98,7 @@
   {
     "name": "ast-grep",
     "description": "AST-aware structural code search and rewrite via ast-grep.",
-    "path": "skills/optional/software-development/ast-grep/SKILL.md",
+    "path": "skills/active/software-development/ast-grep/SKILL.md",
     "license": "MIT"
   },
   {
@@ -110,19 +110,19 @@
   {
     "name": "axolotl",
     "description": "Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).",
-    "path": "skills/optional/mlops/training/axolotl/SKILL.md",
+    "path": "skills/active/mlops/training/axolotl/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "baoyu-article-illustrator",
     "description": "Article illustrations: type × style × palette consistency.",
-    "path": "skills/optional/creative/baoyu-article-illustrator/SKILL.md",
+    "path": "skills/active/creative/baoyu-article-illustrator/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "baoyu-comic",
     "description": "Knowledge comics (知识漫画): educational, biography, tutorial.",
-    "path": "skills/optional/creative/baoyu-comic/SKILL.md",
+    "path": "skills/active/creative/baoyu-comic/SKILL.md",
     "license": "MIT"
   },
   {
@@ -134,13 +134,13 @@
   {
     "name": "bioinformatics",
     "description": "Gateway to 400+ genomics and computational biology skills.",
-    "path": "skills/optional/research/bioinformatics/SKILL.md",
+    "path": "skills/active/research/bioinformatics/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "blackbox",
     "description": "Delegate coding tasks to the Blackbox AI multi-model CLI.",
-    "path": "skills/optional/autonomous-ai-agents/blackbox/SKILL.md",
+    "path": "skills/active/autonomous-ai-agents/blackbox/SKILL.md",
     "license": "MIT"
   },
   {
@@ -164,13 +164,13 @@
   {
     "name": "canvas",
     "description": "Fetch Canvas LMS courses and assignments via API token.",
-    "path": "skills/optional/productivity/canvas/SKILL.md",
+    "path": "skills/active/productivity/canvas/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "chroma",
     "description": "Embedding database for RAG and semantic search.",
-    "path": "skills/optional/mlops/chroma/SKILL.md",
+    "path": "skills/active/mlops/chroma/SKILL.md",
     "license": "MIT"
   },
   {
@@ -188,19 +188,19 @@
   {
     "name": "clip",
     "description": "Zero-shot image classification and image-text search.",
-    "path": "skills/optional/mlops/clip/SKILL.md",
+    "path": "skills/active/mlops/clip/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "cloudflare-temporary-deploy",
     "description": "Deploy a Worker live, no account, via wrangler --temporary.",
-    "path": "skills/optional/web-development/cloudflare-temporary-deploy/SKILL.md",
+    "path": "skills/active/web-development/cloudflare-temporary-deploy/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "code-wiki",
     "description": "Generate wiki docs + Mermaid diagrams for any codebase.",
-    "path": "skills/optional/software-development/code-wiki/SKILL.md",
+    "path": "skills/active/software-development/code-wiki/SKILL.md",
     "license": "MIT"
   },
   {
@@ -230,7 +230,7 @@
   {
     "name": "comps-analysis",
     "description": "Build comparable-company valuation workbooks in Excel.",
-    "path": "skills/optional/finance/comps-analysis/SKILL.md",
+    "path": "skills/active/finance/comps-analysis/SKILL.md",
     "license": "Apache-2.0"
   },
   {
@@ -242,31 +242,31 @@
   {
     "name": "concept-diagrams",
     "description": "Generate flat, minimal educational SVG visuals as HTML.",
-    "path": "skills/optional/creative/concept-diagrams/SKILL.md",
+    "path": "skills/active/creative/concept-diagrams/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "creative-ideation",
     "description": "Generate ideas via named methods from creative practice.",
-    "path": "skills/optional/creative/creative-ideation/SKILL.md",
+    "path": "skills/active/creative/creative-ideation/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "darwinian-evolver",
     "description": "Evolve prompts/regex/SQL/code with Imbue's evolution loop.",
-    "path": "skills/optional/research/darwinian-evolver/SKILL.md",
+    "path": "skills/active/research/darwinian-evolver/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "dcf-model",
     "description": "Build discounted cash flow valuation workbooks in Excel.",
-    "path": "skills/optional/finance/dcf-model/SKILL.md",
+    "path": "skills/active/finance/dcf-model/SKILL.md",
     "license": "Apache-2.0"
   },
   {
     "name": "decision-questionnaire",
     "description": "Turn an unanswerable decision into a questionnaire doc.",
-    "path": "skills/optional/productivity/decision-questionnaire/SKILL.md",
+    "path": "skills/active/productivity/decision-questionnaire/SKILL.md",
     "license": "MIT"
   },
   {
@@ -278,7 +278,7 @@
   {
     "name": "docker-management",
     "description": "Manage Docker containers, images, volumes, and Compose.",
-    "path": "skills/optional/devops/docker-management/SKILL.md",
+    "path": "skills/active/devops/docker-management/SKILL.md",
     "license": "MIT"
   },
   {
@@ -302,31 +302,31 @@
   {
     "name": "domain-intel",
     "description": "Passive recon of subdomains, SSL certs, WHOIS, and DNS.",
-    "path": "skills/optional/research/domain-intel/SKILL.md",
+    "path": "skills/active/research/domain-intel/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "draw-your-font",
     "description": "Turn a handwriting photo into an installable TTF font.",
-    "path": "skills/optional/creative/draw-your-font/SKILL.md",
+    "path": "skills/active/creative/draw-your-font/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "drug-discovery",
     "description": "Drug discovery: ChEMBL search, drug-likeness, interactions.",
-    "path": "skills/optional/research/drug-discovery/SKILL.md",
+    "path": "skills/active/research/drug-discovery/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "dspy",
     "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
-    "path": "skills/optional/mlops/research/dspy/SKILL.md",
+    "path": "skills/active/mlops/research/dspy/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "duckduckgo-search",
     "description": "Free keyless web, news, and image search via ddgs.",
-    "path": "skills/optional/research/duckduckgo-search/SKILL.md",
+    "path": "skills/active/research/duckduckgo-search/SKILL.md",
     "license": "MIT"
   },
   {
@@ -344,7 +344,7 @@
   {
     "name": "evm",
     "description": "Read-only EVM client: wallets, tokens, gas across 8 chains.",
-    "path": "skills/optional/blockchain/evm/SKILL.md",
+    "path": "skills/active/blockchain/evm/SKILL.md",
     "license": "MIT"
   },
   {
@@ -356,19 +356,19 @@
   {
     "name": "excel-author",
     "description": "Build auditable financial workbooks headless via openpyxl.",
-    "path": "skills/optional/finance/excel-author/SKILL.md",
+    "path": "skills/active/finance/excel-author/SKILL.md",
     "license": "Apache-2.0"
   },
   {
     "name": "faiss",
     "description": "Fast vector similarity search at billion scale.",
-    "path": "skills/optional/mlops/faiss/SKILL.md",
+    "path": "skills/active/mlops/faiss/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "fastmcp",
     "description": "Build, test, and deploy Python MCP servers.",
-    "path": "skills/optional/mcp/fastmcp/SKILL.md",
+    "path": "skills/active/mcp/fastmcp/SKILL.md",
     "license": "MIT"
   },
   {
@@ -380,13 +380,13 @@
   {
     "name": "fitness-nutrition",
     "description": "Workout planning, macros, and body metrics via wger/USDA.",
-    "path": "skills/optional/health/fitness-nutrition/SKILL.md",
+    "path": "skills/active/health/fitness-nutrition/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "flash-attention",
     "description": "Speed up long-sequence transformer training and inference.",
-    "path": "skills/optional/mlops/flash-attention/SKILL.md",
+    "path": "skills/active/mlops/flash-attention/SKILL.md",
     "license": "MIT"
   },
   {
@@ -440,13 +440,13 @@
   {
     "name": "gitnexus-explorer",
     "description": "Serve an interactive codebase knowledge graph web UI.",
-    "path": "skills/optional/research/gitnexus-explorer/SKILL.md",
+    "path": "skills/active/research/gitnexus-explorer/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "godmode",
     "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
-    "path": "skills/optional/security/godmode/SKILL.md",
+    "path": "skills/active/security/godmode/SKILL.md",
     "license": "MIT"
   },
   {
@@ -464,13 +464,13 @@
   {
     "name": "grill-me",
     "description": "Adversarial plan interview before implementation.",
-    "path": "skills/optional/software-development/grill-me/SKILL.md",
+    "path": "skills/active/software-development/grill-me/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "grok",
     "description": "Delegate coding to xAI Grok Build CLI (features, PRs).",
-    "path": "skills/optional/autonomous-ai-agents/grok/SKILL.md",
+    "path": "skills/active/autonomous-ai-agents/grok/SKILL.md",
     "license": "MIT"
   },
   {
@@ -482,13 +482,13 @@
   {
     "name": "guidance",
     "description": "Constrain LLM output with grammars; guarantee valid JSON.",
-    "path": "skills/optional/mlops/guidance/SKILL.md",
+    "path": "skills/active/mlops/guidance/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "har-derived-api-client",
     "description": "Record a site's XHR into a HAR, derive an HTTP client.",
-    "path": "skills/optional/web-development/har-derived-api-client/SKILL.md",
+    "path": "skills/active/web-development/har-derived-api-client/SKILL.md",
     "license": "MIT"
   },
   {
@@ -500,7 +500,7 @@
   {
     "name": "here-now",
     "description": "Publish sites to {slug}.here.now and store files in Drives.",
-    "path": "skills/optional/productivity/here-now/SKILL.md",
+    "path": "skills/active/productivity/here-now/SKILL.md",
     "license": "MIT"
   },
   {
@@ -518,7 +518,7 @@
   {
     "name": "huggingface-tokenizers",
     "description": "Fast BPE/WordPiece tokenization and custom vocab training.",
-    "path": "skills/optional/mlops/huggingface-tokenizers/SKILL.md",
+    "path": "skills/active/mlops/huggingface-tokenizers/SKILL.md",
     "license": "MIT"
   },
   {
@@ -530,13 +530,13 @@
   {
     "name": "hyperframes",
     "description": "Render MP4/WebM videos from HTML compositions.",
-    "path": "skills/optional/creative/hyperframes/SKILL.md",
+    "path": "skills/active/creative/hyperframes/SKILL.md",
     "license": "Apache-2.0"
   },
   {
     "name": "hyperliquid",
     "description": "Hyperliquid market data, account history, trade review.",
-    "path": "skills/optional/blockchain/hyperliquid/SKILL.md",
+    "path": "skills/active/blockchain/hyperliquid/SKILL.md",
     "license": "MIT"
   },
   {
@@ -548,19 +548,19 @@
   {
     "name": "impeccable",
     "description": "Frontend design guidance, upstream-maintained (impeccable).",
-    "path": "skills/optional/creative/impeccable/SKILL.md",
+    "path": "skills/active/creative/impeccable/SKILL.md",
     "license": "Apache-2.0"
   },
   {
     "name": "inference-sh-cli",
     "description": "Run 150+ AI apps (image, video, LLM) via inference.sh CLI.",
-    "path": "skills/optional/devops/inference-sh-cli/SKILL.md",
+    "path": "skills/active/devops/inference-sh-cli/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "instructor",
     "description": "Structured LLM outputs validated with Pydantic.",
-    "path": "skills/optional/mlops/instructor/SKILL.md",
+    "path": "skills/active/mlops/instructor/SKILL.md",
     "license": "MIT"
   },
   {
@@ -572,19 +572,19 @@
   {
     "name": "jupyter-notebook",
     "description": "Iterative Python via live Jupyter kernel (hamelnb).",
-    "path": "skills/optional/data-science/jupyter-notebook/SKILL.md",
+    "path": "skills/active/data-science/jupyter-notebook/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "lambda-labs",
     "description": "On-demand GPU cloud instances for ML training.",
-    "path": "skills/optional/mlops/lambda-labs/SKILL.md",
+    "path": "skills/active/mlops/lambda-labs/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "lbo-model",
     "description": "Build leveraged buyout workbooks with IRR/MOIC in Excel.",
-    "path": "skills/optional/finance/lbo-model/SKILL.md",
+    "path": "skills/active/finance/lbo-model/SKILL.md",
     "license": "Apache-2.0"
   },
   {
@@ -596,7 +596,7 @@
   {
     "name": "llava",
     "description": "Vision-language chat: VQA, captioning, image dialogue.",
-    "path": "skills/optional/mlops/llava/SKILL.md",
+    "path": "skills/active/mlops/llava/SKILL.md",
     "license": "MIT"
   },
   {
@@ -638,13 +638,13 @@
   {
     "name": "mcp-oauth-remote-gateway",
     "description": "Manual OAuth for remote MCP servers on headless gateways.",
-    "path": "skills/optional/mcp/mcp-oauth-remote-gateway/SKILL.md",
+    "path": "skills/active/mcp/mcp-oauth-remote-gateway/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "mcporter",
     "description": "List, auth, and call MCP servers/tools from the terminal.",
-    "path": "skills/optional/mcp/mcporter/SKILL.md",
+    "path": "skills/active/mcp/mcporter/SKILL.md",
     "license": "MIT"
   },
   {
@@ -656,13 +656,13 @@
   {
     "name": "meme-generation",
     "description": "Create meme PNGs from templates with Pillow text overlay.",
-    "path": "skills/optional/creative/meme-generation/SKILL.md",
+    "path": "skills/active/creative/meme-generation/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "memento-flashcards",
     "description": "Spaced-repetition flashcards: create, review, quiz, export.",
-    "path": "skills/optional/productivity/memento-flashcards/SKILL.md",
+    "path": "skills/active/productivity/memento-flashcards/SKILL.md",
     "license": "MIT"
   },
   {
@@ -674,13 +674,13 @@
   {
     "name": "merger-model",
     "description": "Build M&A accretion/dilution workbooks in Excel.",
-    "path": "skills/optional/finance/merger-model/SKILL.md",
+    "path": "skills/active/finance/merger-model/SKILL.md",
     "license": "Apache-2.0"
   },
   {
     "name": "minecraft-modpack-server",
     "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
-    "path": "skills/optional/gaming/minecraft-modpack-server/SKILL.md",
+    "path": "skills/active/gaming/minecraft-modpack-server/SKILL.md",
     "license": "MIT"
   },
   {
@@ -710,13 +710,13 @@
   {
     "name": "modal",
     "description": "Serverless GPU cloud for ML jobs and model APIs.",
-    "path": "skills/optional/mlops/modal/SKILL.md",
+    "path": "skills/active/mlops/modal/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "mpp-agent",
     "description": "Pay HTTP 402 APIs via Machine Payments Protocol (MPP).",
-    "path": "skills/optional/payments/mpp-agent/SKILL.md",
+    "path": "skills/active/payments/mpp-agent/SKILL.md",
     "license": "MIT"
   },
   {
@@ -728,13 +728,13 @@
   {
     "name": "nemo-curator",
     "description": "Curate LLM training data: dedupe, filter, PII redaction.",
-    "path": "skills/optional/mlops/nemo-curator/SKILL.md",
+    "path": "skills/active/mlops/nemo-curator/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "neuroskill-bci",
     "description": "Use live BCI cognitive and mood state from NeuroSkill.",
-    "path": "skills/optional/health/neuroskill-bci/SKILL.md",
+    "path": "skills/active/health/neuroskill-bci/SKILL.md",
     "license": "MIT"
   },
   {
@@ -752,7 +752,7 @@
   {
     "name": "obliteratus",
     "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
-    "path": "skills/optional/mlops/obliteratus/SKILL.md",
+    "path": "skills/active/mlops/obliteratus/SKILL.md",
     "license": "MIT"
   },
   {
@@ -770,7 +770,7 @@
   {
     "name": "one-three-one-rule",
     "description": "1-3-1 decision briefs: problem, three options, one pick.",
-    "path": "skills/optional/communication/one-three-one-rule/SKILL.md",
+    "path": "skills/active/communication/one-three-one-rule/SKILL.md",
     "license": "MIT"
   },
   {
@@ -782,7 +782,7 @@
   {
     "name": "openhands",
     "description": "Delegate coding to OpenHands CLI (model-agnostic, LiteLLM).",
-    "path": "skills/optional/autonomous-ai-agents/openhands/SKILL.md",
+    "path": "skills/active/autonomous-ai-agents/openhands/SKILL.md",
     "license": "MIT"
   },
   {
@@ -794,19 +794,19 @@
   {
     "name": "osint-investigation",
     "description": "Follow the money via public records and sanctions data.",
-    "path": "skills/optional/research/osint-investigation/SKILL.md",
+    "path": "skills/active/research/osint-investigation/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "oss-forensics",
     "description": "GitHub supply-chain forensics: recovery, IOCs, reporting.",
-    "path": "skills/optional/security/oss-forensics/SKILL.md",
+    "path": "skills/active/security/oss-forensics/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "outlines",
     "description": "Outlines: structured JSON/regex/Pydantic LLM generation.",
-    "path": "skills/optional/mlops/inference/outlines/SKILL.md",
+    "path": "skills/active/mlops/inference/outlines/SKILL.md",
     "license": "MIT"
   },
   {
@@ -818,7 +818,7 @@
   {
     "name": "page-agent",
     "description": "Embed an in-page natural-language GUI copilot in web apps.",
-    "path": "skills/optional/web-development/page-agent/SKILL.md",
+    "path": "skills/active/web-development/page-agent/SKILL.md",
     "license": "MIT"
   },
   {
@@ -830,7 +830,7 @@
   {
     "name": "parallel-cli",
     "description": "Agent-native web search, deep research, and enrichment.",
-    "path": "skills/optional/research/parallel-cli/SKILL.md",
+    "path": "skills/active/research/parallel-cli/SKILL.md",
     "license": "MIT"
   },
   {
@@ -842,31 +842,31 @@
   {
     "name": "peft",
     "description": "Fine-tune large LLMs with LoRA on limited GPU memory.",
-    "path": "skills/optional/mlops/peft/SKILL.md",
+    "path": "skills/active/mlops/peft/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "pinecone",
     "description": "Managed vector DB for production RAG and search.",
-    "path": "skills/optional/mlops/pinecone/SKILL.md",
+    "path": "skills/active/mlops/pinecone/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "pinecone-research",
     "description": "Agent RAG and long-term memory with Pinecone.",
-    "path": "skills/optional/research/pinecone-research/SKILL.md",
+    "path": "skills/active/research/pinecone-research/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "pinggy-tunnel",
     "description": "Zero-install localhost tunnels over SSH via Pinggy.",
-    "path": "skills/optional/devops/pinggy-tunnel/SKILL.md",
+    "path": "skills/active/devops/pinggy-tunnel/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "pixel-art",
     "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
-    "path": "skills/optional/creative/pixel-art/SKILL.md",
+    "path": "skills/active/creative/pixel-art/SKILL.md",
     "license": "MIT"
   },
   {
@@ -878,7 +878,7 @@
   {
     "name": "pokemon-player",
     "description": "Play Pokemon via headless emulator + RAM reads.",
-    "path": "skills/optional/gaming/pokemon-player/SKILL.md",
+    "path": "skills/active/gaming/pokemon-player/SKILL.md",
     "license": "MIT"
   },
   {
@@ -902,7 +902,7 @@
   {
     "name": "pptx-author",
     "description": "Build PowerPoint decks headless with python-pptx.",
-    "path": "skills/optional/finance/pptx-author/SKILL.md",
+    "path": "skills/active/finance/pptx-author/SKILL.md",
     "license": "Apache-2.0"
   },
   {
@@ -932,7 +932,7 @@
   {
     "name": "publish-site",
     "description": "Versioned site deploys to GitHub/Cloudflare/Netlify Pages.",
-    "path": "skills/optional/web-development/publish-site/SKILL.md",
+    "path": "skills/active/web-development/publish-site/SKILL.md",
     "license": "MIT"
   },
   {
@@ -944,25 +944,25 @@
   {
     "name": "pytorch-fsdp",
     "description": "Fully sharded data-parallel training for large models.",
-    "path": "skills/optional/mlops/pytorch-fsdp/SKILL.md",
+    "path": "skills/active/mlops/pytorch-fsdp/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "pytorch-lightning",
     "description": "Clean training loops with built-in distributed support.",
-    "path": "skills/optional/mlops/pytorch-lightning/SKILL.md",
+    "path": "skills/active/mlops/pytorch-lightning/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "qdrant",
     "description": "Vector search engine for production RAG systems.",
-    "path": "skills/optional/mlops/qdrant/SKILL.md",
+    "path": "skills/active/mlops/qdrant/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "qmd",
     "description": "Hybrid local search over notes, docs, and transcripts.",
-    "path": "skills/optional/research/qmd/SKILL.md",
+    "path": "skills/active/research/qmd/SKILL.md",
     "license": "MIT"
   },
   {
@@ -980,19 +980,19 @@
   {
     "name": "rest-graphql-debug",
     "description": "Debug REST/GraphQL APIs: status codes, auth, schemas, repro.",
-    "path": "skills/optional/software-development/rest-graphql-debug/SKILL.md",
+    "path": "skills/active/software-development/rest-graphql-debug/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "saelens",
     "description": "Train sparse autoencoders to interpret model features.",
-    "path": "skills/optional/mlops/saelens/SKILL.md",
+    "path": "skills/active/mlops/saelens/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "scrapling",
     "description": "Scrape sites with stealth browsing and Cloudflare bypass.",
-    "path": "skills/optional/research/scrapling/SKILL.md",
+    "path": "skills/active/research/scrapling/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1004,7 +1004,7 @@
   {
     "name": "searxng-search",
     "description": "Free keyless meta-search aggregating 70+ engines.",
-    "path": "skills/optional/research/searxng-search/SKILL.md",
+    "path": "skills/active/research/searxng-search/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1028,31 +1028,31 @@
   {
     "name": "setup-wizard-generator",
     "description": "Generate a bash wizard guiding a human through manual setup.",
-    "path": "skills/optional/devops/setup-wizard-generator/SKILL.md",
+    "path": "skills/active/devops/setup-wizard-generator/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "sherlock",
     "description": "Find accounts for a username across 400+ platforms.",
-    "path": "skills/optional/security/sherlock/SKILL.md",
+    "path": "skills/active/security/sherlock/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "shop",
     "description": "Shop catalog search, checkout, order tracking, returns.",
-    "path": "skills/optional/productivity/shop/SKILL.md",
+    "path": "skills/active/productivity/shop/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "shopify",
     "description": "Query Shopify Admin/Storefront GraphQL APIs via curl.",
-    "path": "skills/optional/productivity/shopify/SKILL.md",
+    "path": "skills/active/productivity/shopify/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "simple-english",
     "description": "Rewrite text to ASD-STE100 Simplified Technical English.",
-    "path": "skills/optional/creative/simple-english/SKILL.md",
+    "path": "skills/active/creative/simple-english/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1064,13 +1064,13 @@
   {
     "name": "simpo",
     "description": "Reference-free preference alignment, simpler than DPO.",
-    "path": "skills/optional/mlops/simpo/SKILL.md",
+    "path": "skills/active/mlops/simpo/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "siyuan",
     "description": "Query and edit a SiYuan knowledge base via its API.",
-    "path": "skills/optional/productivity/siyuan/SKILL.md",
+    "path": "skills/active/productivity/siyuan/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1082,19 +1082,19 @@
   {
     "name": "slime",
     "description": "RL post-training for LLMs with Megatron and SGLang.",
-    "path": "skills/optional/mlops/slime/SKILL.md",
+    "path": "skills/active/mlops/slime/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "social-media-content-calendar",
     "description": "Plan multi-platform social campaigns: briefs to posting.",
-    "path": "skills/optional/creative/social-media-content-calendar/SKILL.md",
+    "path": "skills/active/creative/social-media-content-calendar/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "solana",
     "description": "Query Solana wallets, tokens, txs, and NFTs in USD.",
-    "path": "skills/optional/blockchain/solana/SKILL.md",
+    "path": "skills/active/blockchain/solana/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1118,7 +1118,7 @@
   {
     "name": "stable-diffusion",
     "description": "Text-to-image generation, inpainting, and img2img.",
-    "path": "skills/optional/mlops/stable-diffusion/SKILL.md",
+    "path": "skills/active/mlops/stable-diffusion/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1130,25 +1130,25 @@
   {
     "name": "stocks",
     "description": "Stock quotes, history, search, compare, crypto via Yahoo.",
-    "path": "skills/optional/finance/stocks/SKILL.md",
+    "path": "skills/active/finance/stocks/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "stripe-link-cli",
     "description": "Agent payments via Stripe Link — cards, SPT, approvals.",
-    "path": "skills/optional/payments/stripe-link-cli/SKILL.md",
+    "path": "skills/active/payments/stripe-link-cli/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "stripe-projects",
     "description": "Provision SaaS services + sync creds via Stripe Projects.",
-    "path": "skills/optional/payments/stripe-projects/SKILL.md",
+    "path": "skills/active/payments/stripe-projects/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "subagent-driven-development",
     "description": "Execute plans via delegate_task subagents (2-stage review).",
-    "path": "skills/optional/software-development/subagent-driven-development/SKILL.md",
+    "path": "skills/active/software-development/subagent-driven-development/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1166,13 +1166,13 @@
   {
     "name": "telephony",
     "description": "Provision Twilio numbers, SMS/MMS, and AI outbound calls.",
-    "path": "skills/optional/productivity/telephony/SKILL.md",
+    "path": "skills/active/productivity/telephony/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "tensorrt-llm",
     "description": "High-throughput LLM inference on NVIDIA GPUs.",
-    "path": "skills/optional/mlops/tensorrt-llm/SKILL.md",
+    "path": "skills/active/mlops/tensorrt-llm/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1184,7 +1184,7 @@
   {
     "name": "tldraw-offline",
     "description": "Drive and script tldraw offline canvases with an agent.",
-    "path": "skills/optional/creative/tldraw-offline/SKILL.md",
+    "path": "skills/active/creative/tldraw-offline/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1202,7 +1202,7 @@
   {
     "name": "torchtitan",
     "description": "Pretrain LLMs at scale with PyTorch 4D parallelism.",
-    "path": "skills/optional/mlops/torchtitan/SKILL.md",
+    "path": "skills/active/mlops/torchtitan/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1226,37 +1226,37 @@
   {
     "name": "trl-fine-tuning",
     "description": "TRL: SFT, DPO, GRPO, RLOO reward modeling for LLM RLHF.",
-    "path": "skills/optional/mlops/training/trl-fine-tuning/SKILL.md",
+    "path": "skills/active/mlops/training/trl-fine-tuning/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "unbroker",
     "description": "Autonomously remove your info from data-broker sites.",
-    "path": "skills/optional/security/unbroker/SKILL.md",
+    "path": "skills/active/security/unbroker/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "unreal-mcp",
     "description": "Automate Unreal Engine editor scenes, actors, and renders.",
-    "path": "skills/optional/creative/unreal-mcp/SKILL.md",
+    "path": "skills/active/creative/unreal-mcp/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "unsloth",
     "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.",
-    "path": "skills/optional/mlops/training/unsloth/SKILL.md",
+    "path": "skills/active/mlops/training/unsloth/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "watchers",
     "description": "Poll RSS, JSON APIs, and GitHub with watermark dedup.",
-    "path": "skills/optional/devops/watchers/SKILL.md",
+    "path": "skills/active/devops/watchers/SKILL.md",
     "license": "MIT"
   },
   {
     "name": "web-pentest",
     "description": "Authorized web pentest: recon, proof-based exploits, report.",
-    "path": "skills/optional/security/web-pentest/SKILL.md",
+    "path": "skills/active/security/web-pentest/SKILL.md",
     "license": "MIT"
   },
   {
@@ -1274,7 +1274,7 @@
   {
     "name": "whisper",
     "description": "Transcribe and translate speech in 99 languages.",
-    "path": "skills/optional/mlops/whisper/SKILL.md",
+    "path": "skills/active/mlops/whisper/SKILL.md",
     "license": "MIT"
   },
   {

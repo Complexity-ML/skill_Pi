@@ -1,6 +1,6 @@
 # Skills for Pi
 
-217 skills copied from a local Hermes installation and adapted for Pi. This package contains skills only, not extensions. The eight separately installed badlogic skills are not included.
+217 skills copied from a local Hermes installation and adapted for Pi. All are grouped under `skills/active/` and discovered by the package manifest. This package contains skills only, not extensions. The eight separately installed badlogic skills are not included. The folder name `active` does not imply tested runtime compatibility.
 
 ## Install
 

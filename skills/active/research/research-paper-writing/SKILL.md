@@ -1431,7 +1431,7 @@ Compose this skill with other Hermes skills for specific phases:
 | Skill | When to Use | How to Load |
 |-------|-------------|-------------|
 | **arxiv** | Phase 1 (Literature Review): searching arXiv, generating BibTeX, finding related papers via Semantic Scholar | `read({"path": "../arxiv/SKILL.md"})` |
-| **subagent-driven-development** | Phase 5 (Drafting): parallel section writing with 2-stage review (spec compliance then quality) | `read({"path": "../../../optional/software-development/subagent-driven-development/SKILL.md"})` |
+| **subagent-driven-development** | Phase 5 (Drafting): parallel section writing with 2-stage review (spec compliance then quality) | `read({"path": "../../software-development/subagent-driven-development/SKILL.md"})` |
 | **plan** | Phase 0 (Setup): creating structured plans before execution. Writes to `.pi/plans/` | `read({"path": "../../software-development/plan/SKILL.md"})` |
 | **qmd** | Phase 1 (Literature): searching local knowledge bases (notes, transcripts, docs) via hybrid BM25+vector search | Install: `skill_manage("install", "qmd")` |
 | **diagramming** | Phase 4-5: creating Excalidraw-based figures and architecture diagrams | `read({"path": "../../creative/excalidraw/SKILL.md"})` |
