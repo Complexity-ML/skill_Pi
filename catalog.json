@@ -1300,5 +1300,65 @@
     "description": "Yuanbao (元宝) groups: @mention users, query info/members.",
     "path": "skills/active/yuanbao/SKILL.md",
     "license": "MIT"
+  },
+  {
+    "name": "qualification-evidence-gates",
+    "description": "Audit test coverage and qualification claims with exact inventories, terminal results and artifact provenance. Use before declaring a port, regression suite or release complete.",
+    "path": "skills/active/software-development/qualification-evidence-gates/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "evm-client-conformance",
+    "description": "Qualify an EVM implementation using pinned official fixtures and independent client differentials. Use for hard-fork support, gas/state discrepancies or EEST adapters.",
+    "path": "skills/active/blockchain/evm-client-conformance/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "distributed-finality-qualification",
+    "description": "Design bounded multi-node finality and partition campaigns with weighted quorum and execution-linked checkpoints. Use for consensus safety, WAN recovery and validator topology tests.",
+    "path": "skills/active/blockchain/distributed-finality-qualification/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "durable-validator-recovery",
+    "description": "Implement or audit reserve-before-sign journals and fail-closed validator backup/recovery. Use for anti-double-signing, rollback protection, signer migration or coupled consensus/execution stores.",
+    "path": "skills/active/blockchain/durable-validator-recovery/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "async-network-admission",
+    "description": "Audit asynchronous network framing, deadlines, quotas and exactly-once callback completion. Use for P2P adapters, RPC streams, late callbacks or overload isolation.",
+    "path": "skills/active/software-development/async-network-admission/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "immutable-node-release",
+    "description": "Prepare and promote immutable node images with binary/config provenance and signer-safe rollback. Use for Docker candidates, multi-architecture packaging or validator software updates.",
+    "path": "skills/active/devops/immutable-node-release/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "durable-monitor-alerting",
+    "description": "Design read-only stateful monitoring with sticky safety faults and a durable idempotent alert outbox. Use for finality monitoring, retry queues or crash-safe notification delivery.",
+    "path": "skills/active/devops/durable-monitor-alerting/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "onchain-contract-qualification",
+    "description": "Qualify Solidity/OpenZeppelin behavior on the actual target chain with signed replay and adversarial invariants. Use for token callbacks, proxies, marketplaces or runtime compatibility claims.",
+    "path": "skills/active/blockchain/onchain-contract-qualification/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "bridge-trust-boundaries",
+    "description": "Review bridge proof domains, signer compromise assumptions and reserve invariants before real funds. Use for cross-chain mint/burn, relayers, withdrawals or bridge security requirements.",
+    "path": "skills/active/blockchain/bridge-trust-boundaries/SKILL.md",
+    "license": null
+  },
+  {
+    "name": "rpc-behavioral-contracts",
+    "description": "Audit JSON-RPC envelopes, batch side effects and canonical-head fee caches without mistaking route counts for compatibility. Use for RPC ports, parameter validation or fee-estimator reorg bugs.",
+    "path": "skills/active/software-development/rpc-behavioral-contracts/SKILL.md",
+    "license": null
   }
 ]

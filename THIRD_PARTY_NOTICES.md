@@ -16,4 +16,8 @@ Verified upstream MIT declarations were restored for `heartmula` and `polymarket
 
 `catalog.json` identifies each skill's declared license. A frontmatter declaration does not verify the licensing of every bundled third-party asset. Retain upstream copyright notices and applicable license texts; bundled third-party assets remain subject to their own terms. Do not assume the Hermes repository license automatically covers locally authored skills.
 
+## Newly synthesized Blockchain Nano workflows
+
+Ten additional skills were newly written from project documentation, with pinned source references in each `references/sources.md` and an inventory in `NANO_DOCS_SKILLS.md`. No original source Markdown, test corpus or runtime artifact is bundled. These skills are not Hermes copies and are not included in the 217-skill license totals above. Their licensing is pending owner review (`license: null` in the catalog); prior MIT authorization for the thirteen named original skills does not implicitly apply to this new batch.
+
 No blanket license or redistribution clearance is asserted by this package.

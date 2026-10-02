@@ -26,3 +26,7 @@ These names were not found in the checked upstream tree or local tracked Hermes 
 - training-telemetry-contracts
 
 These 13 skills use the owner's MIT license, not an inferred upstream Hermes license. Any bundled third-party material retains its original terms. This review records the owner's assertion and authorization; it does not independently establish legal ownership or audit every bundled asset.
+
+## Pending: 10 Blockchain Nano documentation syntheses
+
+The new batch is identified in `NANO_DOCS_SKILLS.md` and by `license: null` in `catalog.json`. The instructions are newly written, with pinned references rather than bundled source documents. Ownership/licensing and redistribution permission for these syntheses require owner review; the earlier thirteen-skill MIT authorization is not extended to them automatically.
