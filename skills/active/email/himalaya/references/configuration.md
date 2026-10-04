@@ -1,227 +1,96 @@
-# Himalaya Configuration Reference
+# Himalaya configuration — v2.2.1 source reference
 
-Configuration file location: `~/.config/himalaya/config.toml`
+This is the v2 schema, not a drop-in update to v1 `backend.*`/folder mappings.
+A TOML parse succeeds independently of whether a selected Himalaya build accepts
+or uses those fields. Don't silently migrate an account or infer success from an
+ignored key. Confirm version, build features, account/backend and exact approved
+config/overlays before reading private configuration or running any client.
 
-## Minimal IMAP + SMTP Setup
+## Config selection and wizard boundaries
 
-```toml
-[accounts.default]
-email = "user@example.com"
-display-name = "Your Name"
-default = true
+Source paths: `$XDG_CONFIG_HOME/himalaya/config.toml`, then
+`$HOME/.config/himalaya/config.toml`, then `$HOME/.himalayarc`; explicit `-c` or
+`HIMALAYA_CONFIG` overrides defaults. Prefer one owner-approved absolute file;
+never enumerate/mine these paths to discover accounts or credentials.
 
-# IMAP backend for reading emails
-backend.type = "imap"
-backend.host = "imap.example.com"
-backend.port = 993
-backend.encryption.type = "tls"
-backend.login = "user@example.com"
-backend.auth.type = "password"
-backend.auth.raw = "your-password"
+Multiple `-c` paths are colon-delimited, base plus deep-merged overlays. Review all
+inputs and precedence; a filename containing a colon/Windows drive syntax needs
+version-specific handling, not just shell quoting. Files/tools do not universally
+expand `~` or shell variables. Don't overwrite a file by redirecting a wizard into
+it, copy secrets into examples, or replace the whole configuration from a partial
+read. Updates/backups/permissions/current version require explicit approval.
 
-# SMTP backend for sending emails
-message.send.backend.type = "smtp"
-message.send.backend.host = "smtp.example.com"
-message.send.backend.port = 587
-message.send.backend.encryption.type = "start-tls"
-message.send.backend.login = "user@example.com"
-message.send.backend.auth.type = "password"
-message.send.backend.auth.raw = "your-password"
+The tagged README says no in-place configuration subcommand; tagged CLI source
+has top-level **`himalaya configure`** (`wizard` alias), while `account` exposes
+`list` and `check`, not the old `account configure` surface. This documentation
+conflict is not resolved by assuming safe in-place persistence. Missing config
+can trigger an interactive wizard when input is a TTY; JSON/non-TTY account
+resolution suppresses the offer. Wizard discovery probes email-domain services,
+authenticates/tests connections and can write config: not an offline helper.
+Pi Bash provides no assumed PTY; run no wizard/check/discovery automatically.
 
-# Folder aliases — required whenever server folder names differ
-# from himalaya's canonical names. See "Folder Aliases" below.
-folder.aliases.inbox = "INBOX"
-folder.aliases.sent = "Sent"
-folder.aliases.drafts = "Drafts"
-folder.aliases.trash = "Trash"
-```
+## Representative IMAP + SMTP TOML (inert placeholders)
 
-## Password Options
-
-### Raw password (testing only, not recommended)
+Owner-supplied account/servers/credentials must replace placeholders after review.
+This example is only syntax-parsed offline; it is not a working/live account.
 
 ```toml
-backend.auth.raw = "your-password"
+[accounts.example]
+email = "user@example.invalid"
+display-name = "Example User"
+
+imap.server = "imaps://imap.example.invalid:993"
+imap.sasl.plain.username = "user@example.invalid"
+imap.sasl.plain.password.command = ["pass", "show", "APPROVED_IMAP_ENTRY"]
+
+smtp.server = "smtp://smtp.example.invalid:587"
+smtp.starttls = true
+smtp.sasl.plain.username = "user@example.invalid"
+smtp.sasl.plain.password.command = ["pass", "show", "APPROVED_SMTP_ENTRY"]
+
+mailbox.alias.inbox = "INBOX"
+mailbox.alias.sent = "Sent"
+mailbox.alias.drafts = "Drafts"
+mailbox.alias.trash = "Trash"
 ```
 
-### Password from command (recommended)
+`mailbox.alias` is the current mapping (not either old folder-alias spelling).
+Aliases/roles bind to native mailbox names/IDs and can override backend roles.
+Localized/provider names may differ. Verify exact destinations and save-copy policy;
+Gmail/Graph can file sent messages themselves. Do not enable a duplicate copy by
+default or treat a missing Sent copy as send failure. Signature, sender, default
+account, proxy and global settings can change the effective operation.
 
-```toml
-backend.auth.cmd = "pass show email/imap"
-# backend.auth.cmd = "security find-generic-password -a user@example.com -s imap -w"
-```
+## Secrets, OAuth and TLS
 
-### System keyring (requires keyring feature)
+- v2 removed **native keyring** and embedded OAuth flows. A credential command or
+  **external broker** supplies a secret/access token; this does not install `pass`,
+  `ortie`, a keyring, browser OAuth or provider scopes.
+- Command sources execute programs and may refresh/persist tokens or contact a
+  provider. Approve the exact executable, arguments, credential entry, environment,
+  network and persistence scope. A vector avoids constructing shell text but is
+  not a sandbox. The command must output only the expected credential; check its
+  failure/format behavior without printing secrets. Do not mine the keyring.
+- Raw literals expose secrets in plaintext TOML and backups; no raw-password
+  default. Restrict approved files/parents (0600/0700 on POSIX as appropriate),
+  refuse symlink/unexpected files and protect logs; these are not Windows ACL,
+  hostile-parent or race guarantees. No secure writer/migration is bundled.
+- Explicit IMAPS/SMTPS or properly configured mandatory STARTTLS, verified trust
+  and approved endpoints are required. Loopback is not identity/security proof.
+  Do not disable TLS/auth or accept an arbitrary certificate to fix connectivity.
+- Per-backend/account **proxy** config or proxy environment variables can route
+  connections elsewhere; review rather than assuming a direct/private connection.
+- Native Gmail/Graph/JMAP and other SASL schemes need their selected schema,
+  permissions, scopes and broker configuration checked separately. Provider policy
+  (e.g. whether Gmail app passwords are available) is not guaranteed by enabling
+  2FA. Older iCloud recipes aren't universally correct username/policy evidence.
+  No OAuth broker, app-password creation, refresh or provider login was tested.
 
-```toml
-backend.auth.keyring = "imap-example"
-```
+## Sources and unresolved qualifications
 
-Then run `himalaya account configure <account>` to store the password.
-
-## Gmail Configuration
-
-```toml
-[accounts.gmail]
-email = "you@gmail.com"
-display-name = "Your Name"
-default = true
-
-backend.type = "imap"
-backend.host = "imap.gmail.com"
-backend.port = 993
-backend.encryption.type = "tls"
-backend.login = "you@gmail.com"
-backend.auth.type = "password"
-backend.auth.cmd = "pass show google/app-password"
-
-message.send.backend.type = "smtp"
-message.send.backend.host = "smtp.gmail.com"
-message.send.backend.port = 587
-message.send.backend.encryption.type = "start-tls"
-message.send.backend.login = "you@gmail.com"
-message.send.backend.auth.type = "password"
-message.send.backend.auth.cmd = "pass show google/app-password"
-
-# Gmail folder mapping. Without these, save-to-Sent fails after
-# SMTP delivery succeeds (Gmail's Sent folder is `[Gmail]/Sent Mail`,
-# not `Sent`), and `himalaya message send` exits non-zero. Any
-# caller that retries on that error will re-run SMTP — duplicate
-# emails to recipients. Always include this block for Gmail.
-folder.aliases.inbox = "INBOX"
-folder.aliases.sent = "[Gmail]/Sent Mail"
-folder.aliases.drafts = "[Gmail]/Drafts"
-folder.aliases.trash = "[Gmail]/Trash"
-```
-
-**Note:** Gmail requires an App Password if 2FA is enabled.
-
-## iCloud Configuration
-
-```toml
-[accounts.icloud]
-email = "you@icloud.com"
-display-name = "Your Name"
-
-backend.type = "imap"
-backend.host = "imap.mail.me.com"
-backend.port = 993
-backend.encryption.type = "tls"
-backend.login = "you@icloud.com"
-backend.auth.type = "password"
-backend.auth.cmd = "pass show icloud/app-password"
-
-message.send.backend.type = "smtp"
-message.send.backend.host = "smtp.mail.me.com"
-message.send.backend.port = 587
-message.send.backend.encryption.type = "start-tls"
-message.send.backend.login = "you@icloud.com"
-message.send.backend.auth.type = "password"
-message.send.backend.auth.cmd = "pass show icloud/app-password"
-```
-
-**Note:** Generate an app-specific password at appleid.apple.com
-
-## Folder Aliases
-
-Map himalaya's canonical folder names (`inbox`, `sent`, `drafts`,
-`trash`) to whatever the server actually calls them. Use the
-v1.2.0 `folder.aliases.X` syntax (plural, dotted keys, directly
-under `[accounts.NAME]`):
-
-```toml
-[accounts.default]
-# ... other account config ...
-
-folder.aliases.inbox = "INBOX"
-folder.aliases.sent = "Sent"
-folder.aliases.drafts = "Drafts"
-folder.aliases.trash = "Trash"
-```
-
-The equivalent TOML sub-section form also works in v1.2.0:
-
-```toml
-[accounts.default.folder.aliases]
-inbox = "INBOX"
-sent = "Sent"
-drafts = "Drafts"
-trash = "Trash"
-```
-
-> **Don't use the singular `alias` form.** Pre-v1.2.0 docs showed
-> `[accounts.NAME.folder.alias]` (singular). v1.2.0 silently
-> ignores that sub-section — TOML parses without error, but the
-> alias resolver never reads it. Every lookup then falls through
-> to the canonical name. On Gmail (where `sent` is actually
-> `[Gmail]/Sent Mail`) this means save-to-Sent fails *after* SMTP
-> delivery succeeds, and `himalaya message send` exits non-zero.
-> Any caller (agent, script, user) that retries on that error
-> code will re-run the send — including SMTP — producing duplicate
-> emails to recipients. Always use `folder.aliases.X` (plural).
-
-## Multiple Accounts
-
-```toml
-[accounts.personal]
-email = "personal@example.com"
-default = true
-# ... backend config ...
-
-[accounts.work]
-email = "work@company.com"
-# ... backend config ...
-```
-
-Switch accounts with `--account`:
-
-```bash
-himalaya --account work envelope list
-```
-
-## Notmuch Backend (local mail)
-
-```toml
-[accounts.local]
-email = "user@example.com"
-
-backend.type = "notmuch"
-backend.db-path = "~/.mail/.notmuch"
-```
-
-## OAuth2 Authentication (for providers that support it)
-
-```toml
-backend.auth.type = "oauth2"
-backend.auth.client-id = "your-client-id"
-backend.auth.client-secret.cmd = "pass show oauth/client-secret"
-backend.auth.access-token.cmd = "pass show oauth/access-token"
-backend.auth.refresh-token.cmd = "pass show oauth/refresh-token"
-backend.auth.auth-url = "https://provider.com/oauth/authorize"
-backend.auth.token-url = "https://provider.com/oauth/token"
-```
-
-## Additional Options
-
-### Signature
-
-```toml
-[accounts.default]
-signature = "Best regards,\nYour Name"
-signature-delim = "-- \n"
-```
-
-### Downloads directory
-
-```toml
-[accounts.default]
-downloads-dir = "~/Downloads/himalaya"
-```
-
-### Editor for composing
-
-Set via environment variable:
-
-```bash
-export EDITOR="vim"
-```
+`pimalaya/himalaya` tag v2.2.1: README and `config.sample.toml` fully read; `src/cli.rs`
+fully read. The large `src/config.rs`, secret/runtime dependency implementations,
+all overlays/backend auth/proxy code and older-version behavior remain unreviewed.
+The native executable is absent. Parsing this synthetic TOML proves syntax and
+expected example structure only, not deserialization, meaningful settings,
+credential security, provider compatibility, TLS or authorization.

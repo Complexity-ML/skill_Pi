@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-03",
+  "scope": "Lot2q Himalaya guide and both bundled references fully read/corrected after2p read-only inventory.71partial/156unreviewed/0closed. Native himalaya absent; no mail/account/config/credential/provider/compiler action.",
+  "sources": [
+    {
+      "name": "release",
+      "url": "https://api.github.com/repos/pimalaya/himalaya/releases/latest",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-release",
+      "sha256": "23a4b73797b6b56f9d54db3e834ff7024b1fb93dfbd8868857d6e3d1ec500f18",
+      "inspection": "Parsed latest tagv2.2.1 only;other release metadata/assets/signatures/digests not inspected. Not a trusted installer qualification."
+    },
+    {
+      "name": "readme",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/master/README.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-readme",
+      "sha256": "7b0498886e1946c4a4eeb8907a2c8c5b82fafaf1f084aa3a79cddba58606a083",
+      "inspection": "Master README fully read; differs from tagged README (including wizard feature text), not merged into tagged CLI facts."
+    },
+    {
+      "name": "tree",
+      "url": "https://api.github.com/repos/pimalaya/himalaya/git/trees/HEAD?recursive=1",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tree",
+      "sha256": "f7c15591798a18a5fa434a68858e151bc8453e076e4cc6167d1b2ddd942ff1b3",
+      "inspection": "Matched source paths/reported revision only;full tree/callees/files not read. Master discovery not tagged version qualification."
+    },
+    {
+      "name": "tag-README.md",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/README.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-README.md",
+      "sha256": "1872494e56404d03272bfa2a7b857111d78ec4ecde4d173a410dd6b577a25213",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-Cargo.toml",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/Cargo.toml",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-Cargo.toml",
+      "sha256": "da3f5cf40dfc955a5ecb4cababf80c54abc4a4807ad3965114f70649783713f6",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-config.sample.toml",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/config.sample.toml",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-config.sample.toml",
+      "sha256": "7ddc78f62eea803a1aeb2913ad690aedb3b02591ff10f64d7a33498f92f68ec5",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-cli.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/cli.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-cli.rs",
+      "sha256": "7791ee2786e11c05dae60a7feedd05d8abfe4e037e1b688b343c6575f572ae96",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-config.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/config.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-config.rs",
+      "sha256": "400ba799c9e674a1bd4cbc012e6fe52efd19bcc89788ca025b024a640c9a40e9",
+      "inspection": "Downloaded only; large config/builder implementations not read or qualified. No complete backend/secret/MIME/security chain inference."
+    },
+    {
+      "name": "tag-src-main.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/main.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-main.rs",
+      "sha256": "3b6bf67e884e0a98d1003545d80e53713d46e1de547fcd9ad09ec1829442fa9a",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-read.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/read.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-read.rs",
+      "sha256": "594cbbb894660cdaab3d258727ed1e1b0b3a98450a6b23ce8e9a312287a8a3e8",
+      "inspection": "Lines1-90 read only:raw bytes stdout vs lossily UTF8JSON,seen opt-in and parsed renderer. Rest renderer/tests unread."
+    },
+    {
+      "name": "tag-src-shared-message-send.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/send.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-send.rs",
+      "sha256": "4a65c0a87c9b394683c48410dae1b6b2c0f3f3f8168421d0af5caef45ee449f8",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-compose.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/compose.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-compose.rs",
+      "sha256": "0f41146649da6c25b8cc5d3cc2fd5c9eafadf51037deb095855f7aab5ff6af41",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-reply.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/reply.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-reply.rs",
+      "sha256": "1d4f0ad8071f8a8534dc71213ea51fab565d5ebbf4371f559dc5053804b890da",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-handler.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/handler.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-handler.rs",
+      "sha256": "d184967ab78fd5a05ba1d062180a3103eb65ac1d90d80955809ac95a02a14605",
+      "inspection": "Lines1-146 read only:send before save,queued result distinction/generic lines/template-signature difference. Remaining MessageTemplate/dependencies unreviewed."
+    },
+    {
+      "name": "tag-src-shared-message-builder.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/builder.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-builder.rs",
+      "sha256": "0861fbbf908aaef12b9f791d58a9df9e4d2996c8295a7b6471ce37c3ae92e90a",
+      "inspection": "Downloaded only; large config/builder implementations not read or qualified. No complete backend/secret/MIME/security chain inference."
+    },
+    {
+      "name": "tag-src-shared-message-cli.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/cli.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-cli.rs",
+      "sha256": "48920b000ab597f1b7c75fddedb3827cea7877b3bd5003f949b1fc57e32c0a9f",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-copy.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/copy.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-copy.rs",
+      "sha256": "7c0dc3293a078f5ff3a69974c5fee9ddd78cff4aaeb16e3726f67774c72293c9",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-mv.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/mv.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-mv.rs",
+      "sha256": "07475d7a077af110025681f06199596a79d25985c208ea8f4da33afb9f332429",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-attachment-download.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/attachment/download.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-attachment-download.rs",
+      "sha256": "2db9ba4b2fcc7c107bebebc28e6c9a8b1019fb273a94b0dc26e29bb0a0e78e25",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-envelope-list.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/envelope/list.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-envelope-list.rs",
+      "sha256": "dc0d2233fc8f7148331716f796396f7b5e6ab9581f97e39e8efc7e4efad363f2",
+      "inspection": "Lines1-144 read only:page1/configured size/fallback25/zero filteredNone/table width/queued; remaining renderer/schema/tests unreviewed."
+    },
+    {
+      "name": "tag-src-shared-flag-arg.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/flag/arg.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-flag-arg.rs",
+      "sha256": "52dce73a049d2e7955b93772ceead9d3e76ffe1159dfd435afe7077fba98a70c",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-account-cli.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/account/cli.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-account-cli.rs",
+      "sha256": "11765fd7b86aba0ca1a3394fac2296827f54a2d12de17c6b24920ddf384c8932",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "mml-readme",
+      "url": "https://raw.githubusercontent.com/pimalaya/mml/master/README.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-mml-readme",
+      "sha256": "5ed425ef1b815f4b53332d76188995eb258255b507166e217bbfe7ee3fb24b6f",
+      "inspection": "Full272line master README read:separate compiler/editor/interpreter/attachments/crypto/pipes. No full grammar/implementation/PGP/library/CLI qualification; moving source, not installed version."
+    },
+    {
+      "name": "tag-commit",
+      "url": "https://api.github.com/repos/pimalaya/himalaya/commits/v2.2.1",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-commit",
+      "sha256": "1b37bc4a770fe399da9e254d2d7fe8aa01b3411d23b064e75f736b4197cdf33d",
+      "inspection": "Parsed commitSHA5b12b2a8c2c253b98f15c46610ad74cba2a182bc forv2.2.1;remaining commit/diff metadata unreviewed. Tag-source URLs still tags, not independently authenticated or all refetched by commit."
+    },
+    {
+      "name": "tag-src-shared-envelope-search.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/envelope/search.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-envelope-search.rs",
+      "sha256": "28939471c9f045046e9578a1866cf6456c56fcd1d0103f9ceb5dfb0f05415230",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-mailbox-arg.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/mailbox/arg.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-mailbox-arg.rs",
+      "sha256": "1e098d7157cfc9f0d8d160e03630a311613a95ca17b981bd37237630b736edc8",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    },
+    {
+      "name": "tag-src-shared-message-arg.rs",
+      "url": "https://raw.githubusercontent.com/pimalaya/himalaya/v2.2.1/src/shared/message/arg.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2q-tag-src-shared-message-arg.rs",
+      "sha256": "a838b82d1fea7afdb080454563d822ef6e25ac61b3d5711db6f297ed3a4c4aec",
+      "inspection": "Full file read at source tagv2.2.1; parser/frontend/static behavior only, no build/native CLI/dependency/provider tests."
+    }
+  ],
+  "current_local_file_sha256": {
+    "skills/active/email/himalaya/SKILL.md": "00439236bcb6b909c5578078f29f8a38a4a67ab3c12d48c87f06e2f5a04746c8",
+    "skills/active/email/himalaya/references/configuration.md": "4a1151914ff3fba198ecc656eb43a431d1b9f85992dc85732bd5b5ab4305701c",
+    "skills/active/email/himalaya/references/message-composition.md": "5c5fd53134a141431ec7e1ef82bc764ac2a46b8adac7b2e1a329ceae10fc2ec9",
+    "scripts/test_himalaya_contracts.py": "6f675a3901124caa181bc85fb906cef68271fbc89f79a87a7f6f08e0e09cf053"
+  },
+  "tests": {
+    "suite": "scripts/test_himalaya_contracts.py",
+    "red": "Initial8documentation methods7failures+1error, not8operational defects. First edited pass1lexical failure due line-split dangling-symlink wording; clarified without weakening assertions. Added input-reader assertions failed then documentation corrected after MessageArg source read.",
+    "green": "8guards/213global offline tests pass;owned inert TOML parsed only,2Bash snippets syntax-only,157bundled Python+17root scripts parse,227Pi loads/0diagnostics/catalogue mismatches.",
+    "qualification": "No native Rust/compiler/CLI/MML/MIME/send/Seen/provider/privacy/attachment/race/broker/wizard/config/deserialization/consent tests. Source traces are not actual provider reproductions. Final ad-hoc loader helper first assumed catalog.skills and threw TypeError because catalogue root is an array; corrected helper passes227/0 with exact identities, no catalogue/loader defect inferred."
+  },
+  "corrections": [
+    "v2.2.1 major-version boundary/current mailbox/--json/backend/DSL/movefrom-to/attachmentdir vs oldv1 examples. Write remainscompose alias, not retired command/editor assumption. No remote shell installer/implicitdeps/HermesPTY/process/defaultprivate probe.",
+    "Source configuration mailbox.alias/imap.server/SASL/smtp.starttls;no native keyring/embedded OAuth,external broker and command authority/proxy/overlays/colonPaths/TLS scopes. Tag README claims no in-place subcommand but parser exposes configure; conflict/persistence not erased or assumed safe.",
+    "Read default frontend seenfalse,explicit--seen mutation,rendererpartial/plain-vs-MIME and rawJSONlossyUTF8/wrappedstdout/errors. Search date senderheader vsreceipt and queued omissions,zero options notzero results/page limits nonexhaustive.",
+    "ComposeJSON omits signature,client config not guaranteedoffline/providerdraft separate;full normalizedMIME+FromToCcBcc+current account/backend/copyapproval/staleapproval. Handler sendthen-copyerror/deferredqueue/zero-copy result,no nonzero-Sent-absence retry authority/readback-notdelivery.",
+    "MessageArg filesUTF8+CRLF;missing positional path can become inlineMIME;stdin.lines.map_while(Result::ok) can retainpartial prefix afterread/UTF8error. Removed direct prepared-input send recipe until strict normalized input/staging qualified;no safe send wrapper implemented.",
+    "Downloader unique_pathprecheck thenfswrite notatomic/no-clobber;dangling symlink and1023suffixfallback/after-writes missing-part error risks visible. Requires approved exactparts/privateowned0700/no concurrency and stops if guarantees not established;not hostile-race exporter or malware/security proof.",
+    "Separate MML compile-stage-review-currentapproval vs automatic editor/compile-to-send pipes. MIME/MML/plainJSON distinctions,local file paths/crypto/keydiscovery/interpreterdisk effects and no sanitizer/PGP/Bcc guarantee;no compiler invocation."
+  ],
+  "remaining_limits": [
+    "Himalaya review remains partial;AgentMail/Box next. Legacyv1/schema/backend/provider behavior and complete tag source/dependency/auth/printer/model/SDK/renderer/builder/config not reviewed.",
+    "No native executable/build/install/update/version/help/config/private accounts/messages/folders/body/attachments/secret store/OAuthbroker/check/wizard/domain discovery/mailserver/rawSMTP/GPG/mml/queue/send/save/delete/sync/export/provider/action accessed or executed.",
+    "No operational Rust/backend reproduction of attachment collision/symlink/writepartial or inputtruncation;source sequence only. No privacy/Bcc/maildelivery/Seen/auth/TLS/consent/Windows/CLIboundaries qualified. No safe publisher/strict sender/retry/dedup engine supplied.",
+    "Source tag and master differ;README/parser configure conflict retained. Tag commit lookup is metadata, hashes integrity only:not signed authenticity/trusted digest/complete reading/behavioral qualification. Temporary raw source evidence not bundled durable release proof.",
+    "Old2p Himalaya read-only hashes intentionally predate these corrections;current ledger and2q hashes identify new contents. No audit commit/push/installation/installedcopy/badlogic/Nano change;authors/license retained."
+  ]
+}

@@ -27,301 +27,166 @@ metadata:
     runtime_verified: false
 ---
 
-## Pi compatibility
+# Himalaya — version-scoped mail operations in Pi
 
-- This skill runs inside **Pi**, not the Hermes agent runtime. Use only tools actually declared in the current session.
-- Resolve bundled scripts, templates, assets and reference paths relative to this `SKILL.md` directory. Preserve their contents and CLI syntax.
-- Pi tool argument examples: `read({"path":"/absolute/file"})`, `write({"path":"/absolute/file","content":"..."})`, `bash({"command":"..."})`. Use `edit` for precise changes to existing files.
-- Shell/Python/JavaScript code should run through `bash` using the appropriate interpreter; `execute_code` is not a default Pi tool. Do not pass natural-language pseudocode to an interpreter.
-- Check prerequisites before running commands. Copying this skill does not install its CLIs, enable external services, or provide API keys.
-- Source compatibility has been adapted, but runtime behavior and third-party dependencies have **not** been tested.
+Use declared `bash`, `read`, `edit` and `write` only. Bash is not a PTY, background
+session manager or sandbox. No Hermes email gateway, environment loader, browser,
+credential broker or editor integration is assumed. Bundled references resolve
+from this file: [configuration](references/configuration.md) and
+[composition/MML](references/message-composition.md).
 
-# Himalaya Email CLI
+## Version and prerequisites
 
-Himalaya is a CLI email client that lets you manage emails from the terminal using IMAP, SMTP, Notmuch, or Sendmail backends.
+Public release metadata and source tag **v2.2.1** were inspected during this audit;
+the CLI is **not installed** locally. This is source inspection, not runtime
+qualification. v2 is a breaking redesign: do not combine the old v1 backend/
+folder/template/config examples with the v2 parser. The skill's historical
+frontmatter version is not the installed CLI version.
 
-This skill is separate from the Hermes Email gateway adapter. The gateway
-adapter lets people email the agent and uses Hermes' built-in IMAP/SMTP
-adapter; this skill lets the agent operate a mailbox from terminal tools and
-requires the external `himalaya` CLI.
+Check an approved existing executable's version/help before operating. Do not
+install/update as an implicit fallback. Choose one explicitly approved, pinned
+method and trusted artifact/source provenance; no remote-script-to-shell recipe,
+privilege escalation or package-manager fallback ladder. Source Cargo metadata
+requires Rust1.89; `--locked` does not itself pin a Git revision or establish trust.
+Backends/TLS capabilities depend on build features; no Notmuch/Sendmail or native
+keyring support is inferred from the historical guide.
 
-## References
+## Scope and current account
 
-- `references/configuration.md` (config file setup + IMAP/SMTP authentication)
-- `references/message-composition.md` (MML syntax for composing emails)
+Obtain exact account, backend, config path, mailbox, message IDs and read/write
+scope before any private access. A help/version check is not consent to enumerate
+accounts/folders/messages. Config may execute secret commands, load overlays/proxy
+settings and create backend clients; even composition is not guaranteed offline.
+Don't mine configs/keychains, print credentials, refresh tokens, run account
+checks, launch discovery/wizards or change authentication without approval.
 
-## Prerequisites
+Specify `-c`, `-a/--account` and `--backend` rather than trusting defaults. Empty
+or reserved `default` account selectors can mean the default account, not an exact
+named identity; revalidate the actual selected identity instead. Shared
+commands otherwise pick a configured backend; protocol-specific commands ignore
+that selector and need separate review. `-m/--mailbox` is the v2 mailbox selector;
+aliases/roles differ by backend. IDs are opaque and backend/account/mailbox-
+scoped, not globally stable row numbers. Revalidate identity/current mailbox state
+(including IMAP UID validity when relevant); don't reuse an old ID blindly.
+Quoted shell arguments still need CLI/value validation, not shell-code interpolation.
 
-1. Himalaya CLI installed (`himalaya --version` to verify)
-2. A configuration file at `~/.config/himalaya/config.toml`
-3. IMAP/SMTP credentials configured (password stored securely)
+## Scoped read examples (v2.2.1 source)
 
-### Installation
-
-```bash
-# Pre-built binary (Linux/macOS — recommended)
-curl -sSL https://raw.githubusercontent.com/pimalaya/himalaya/master/install.sh | PREFIX=~/.local sh
-
-# macOS via Homebrew
-brew install himalaya
-
-# Or via cargo (any platform with Rust)
-cargo install himalaya --locked
-```
-
-## Configuration Setup
-
-Run the interactive wizard to set up an account:
-
-```bash
-himalaya account configure
-```
-
-Or create `~/.config/himalaya/config.toml` manually:
-
-```toml
-[accounts.personal]
-email = "you@example.com"
-display-name = "Your Name"
-default = true
-
-backend.type = "imap"
-backend.host = "imap.example.com"
-backend.port = 993
-backend.encryption.type = "tls"
-backend.login = "you@example.com"
-backend.auth.type = "password"
-backend.auth.cmd = "pass show email/imap"  # or use keyring
-
-message.send.backend.type = "smtp"
-message.send.backend.host = "smtp.example.com"
-message.send.backend.port = 587
-message.send.backend.encryption.type = "start-tls"
-message.send.backend.login = "you@example.com"
-message.send.backend.auth.type = "password"
-message.send.backend.auth.cmd = "pass show email/smtp"
-
-# Folder aliases (himalaya v1.2.0+ syntax). Required whenever the
-# server's folder names don't match himalaya's canonical names
-# (inbox/sent/drafts/trash). Gmail is the common case — see
-# `references/configuration.md` for the `[Gmail]/Sent Mail` mapping.
-folder.aliases.inbox = "INBOX"
-folder.aliases.sent = "Sent"
-folder.aliases.drafts = "Drafts"
-folder.aliases.trash = "Trash"
-```
-
-> **Heads up on the alias syntax.** Pre-v1.2.0 docs used a
-> `[accounts.NAME.folder.alias]` sub-section (singular `alias`).
-> v1.2.0 silently ignores that form — TOML parses fine, but the
-> alias resolver never reads it, so every lookup falls through to
-> the canonical name. On Gmail this means save-to-Sent fails *after*
-> SMTP delivery succeeds, and `himalaya message send` exits non-zero.
-> Any caller (agent, script, user) that retries on that exit code
-> will re-run the entire send — including SMTP — producing duplicate
-> emails to recipients. Always use `folder.aliases.X` (plural, dotted
-> keys, directly under `[accounts.NAME]`).
-
-## Hermes Integration Notes
-
-- **Reading, listing, searching, moving, deleting** all work directly through the terminal tool
-- **Composing/replying/forwarding** — piped input (`cat << EOF | himalaya template send`) is recommended for reliability. Interactive `$EDITOR` mode works with `pty=true` + background + process tool, but requires knowing the editor and its commands
-- Use `--output json` for structured output that's easier to parse programmatically
-- The `himalaya account configure` wizard requires interactive input — use PTY mode: `terminal(command="himalaya account configure", pty=true)`
-
-## Common Operations
-
-### List Folders
+POSIX Bash templates only, after specific approval. `CONFIG`, `ACCOUNT` and
+`MESSAGE_ID` must be validated approved values, not discovered private defaults:
 
 ```bash
-himalaya folder list
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap --json mailbox list
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap --json envelope list --mailbox INBOX --page 1 --page-size 20
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap --json envelope search --mailbox INBOX from alice and subject meeting
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap --json message read --mailbox INBOX "$MESSAGE_ID"
+# Raw RFC 5322 bytes: omit --json and prohibit interactive config fallback:
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap message read --mailbox INBOX --raw "$MESSAGE_ID" < /dev/null
 ```
 
-### List Emails
+`envelope list` is one page, not a complete mailbox; search has its own DSL.
+Search date clauses inspect the sender's Date header, not necessarily delivery/
+receipt time. Empty/default searches and queued-message omissions affect coverage.
+Source default page is1, configured size overrides hard fallback25. Use positive
+page/page-size values: source filters zero to an absent option, not zero results.
+Bound total
+pages/items/output/time and retain partial status on failure. No snapshot,
+exhaustive search, attachment inventory or hard resource limit is provided here.
 
-List emails in INBOX (default):
+Shared `message read` passes a false seen flag unless **`--seen`** is requested.
+That is a source-level default, not proof that every backend/cache/provider read
+has no side effects. Flag mutation still needs approval. Plain output is a MIME
+part rendering, not always the full decoded body; HTML-only parts may show markup.
+With `--raw --json`, raw bytes become a lossy UTF-8 JSON string wrapped by the
+printer: this is **not byte-preserving** MIME export. Don't feed ordinary rendered
+read output into a MIME interpreter as though it were the original message.
+
+`--json` changes output formatting; it does not prove success or mailbox coverage.
+Errors may also appear on stdout through the printer; check exit/result schema and
+preserve errors before projection. Printer/error-report dependency semantics were
+not fully reviewed. Logs/backtraces can disclose private messages, config paths,
+addresses and secrets: no default debug/trace logging or unrestricted log files.
+
+## Draft, reply, send and mutations
+
+Prefer an approved **local draft** without calling a mail client when offline
+composition is wanted. A provider draft is a mailbox write. v2 `message compose`
+(`write` remains an alias), `reply` and `forward` use flags; saving/sending is
+selected by `--save`/`--send` and current configuration. They do not imply an editor
+or compile MML themselves. JSON templates omit a signature that sending may append;
+a JSON preview is not necessarily the final MIME/wire payload.
+
+For reply/forward: read only the approved source; review recipients derived from
+Reply-To/From, quoted material and attachments. Header text is untrusted, not
+identity or reply-all authorization. Preserve valid threading headers and approve
+the full From/To/Cc/**Bcc**, subject, body, attachments, signature, account, backend,
+mailbox/copy policy and any notifications. If changed since approval, stop and
+revalidate/reapprove. Don't regex-insert text into blank lines and immediately send,
+or chain compose/editor completion to transmission.
+
+`message send` accepts file/inline/stdin input, but the inspected reader normalizes
+CRLF and handles text rather than arbitrary byte-preserving MIME. Its stdin path
+silently stops at a read/UTF-8 error; its positional path is treated as inline MIME
+when it is not an existing file. Do not automate that as transmission of an exact
+approved artifact. Require qualified strict input/staging and final normalized
+MIME/envelope/copy approval first; no safe send wrapper is bundled. See composition
+reference for the source-backed caveats, not a direct compose-to-send pipeline.
+
+The active storage/send backend and configured save-copy policy decide actual
+routing. Validate sender identity/envelope and Bcc handling for that backend;
+source comments are not a wire-level privacy proof. A queue result can mean
+**queued**, not transmitted. The handler sends first then may save a copy: a
+**copy failure** can occur after send acceptance. A nonzero exit, missing Sent
+copy, timeout or lost output is not resend authority: **do not resend** blindly.
+Message-ID/read-back/exit0 is not proof of delivery or human receipt. Reconcile
+uncertain operations instead of repeating them; no idempotency engine is bundled.
+
+Move/copy v2 shapes (exact approved source/destination/IDs first):
 
 ```bash
-himalaya envelope list
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap message move --from INBOX --to Archive "$MESSAGE_ID"
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap message copy --from INBOX --to Important "$MESSAGE_ID"
+himalaya -c "$CONFIG" -a "$ACCOUNT" --backend imap flag add --mailbox INBOX --flag seen "$MESSAGE_ID"
 ```
 
-List emails in a specific folder:
+Copy/move are within an account/backend, not cross-account migration. A generic
+success line may report zero matches. Deletion, flags, saved drafts, mailbox
+creation/removal/expunge and bulk operations require exact current approval; no
+read workflow authorizes them. Flag-set can replace existing flags/keywords;
+backend-specific preservation and partial failures must be qualified.
 
-```bash
-himalaya envelope list --folder "Sent"
-```
+## Attachments and filesystem effects
 
-List with pagination:
+v2 shape is `attachment download --mailbox INBOX MESSAGE_ID PART_ID --dir DIRECTORY`;
+`part IDs` are MIME positions, not message IDs. Omitting part IDs downloads all
+parts, including inline parts. Approve the exact parts, bytes, destination and
+retention; don't default to Downloads/tmp or automatically open/execute contents.
 
-```bash
-himalaya envelope list --page 1 --page-size 20
-```
+The inspected downloader chooses a nonexisting name then calls `fs::write`:
+this is **not atomic** no-clobber; an existence check can miss a **dangling symlink**. After trying suffixes1..1023, it falls back to the original filename.
+Unknown requested part IDs are checked **after writes**, so errors can leave
+**partial writes**. Source comments claiming collision suffixing are not a safety
+proof. Do not automate it into a shared/preexisting/hostile directory.
 
-### Search Emails
+Before using that downloader, require an approved newly owned private directory
+(e.g.0700 on POSIX), bounded inputs, a controlled no-concurrency parent, and inspect
+resulting paths/permissions/partial effects. These precautions are not a hostile-
+parent/race/Windows safety qualification, and none is implemented by this skill.
+If those guarantees cannot be established, stop and propose a qualified no-replace
+exporter rather than bypassing the guard. Filename cleanup is not malware/HTML/MIME
+sanitization or a storage/backup guarantee.
 
-```bash
-himalaya envelope list from john@example.com subject meeting
-```
+## Sources and remaining gates
 
-### Read an Email
-
-Read email by ID (shows plain text):
-
-```bash
-himalaya message read 42
-```
-
-Export raw MIME:
-
-```bash
-himalaya message export 42 --full
-```
-
-### Reply to an Email
-
-To reply non-interactively from Hermes, read the original message, compose a reply, and pipe it:
-
-```bash
-# Get the reply template, edit it, and send
-himalaya template reply 42 | sed 's/^$/\nYour reply text here\n/' | himalaya template send
-```
-
-Or build the reply manually:
-
-```bash
-cat << 'EOF' | himalaya template send
-From: you@example.com
-To: sender@example.com
-Subject: Re: Original Subject
-In-Reply-To: <original-message-id>
-
-Your reply here.
-EOF
-```
-
-Reply-all (interactive — needs $EDITOR, use template approach above instead):
-
-```bash
-himalaya message reply 42 --all
-```
-
-### Forward an Email
-
-```bash
-# Get forward template and pipe with modifications
-himalaya template forward 42 | sed 's/^To:.*/To: newrecipient@example.com/' | himalaya template send
-```
-
-### Write a New Email
-
-**Non-interactive (use this from Hermes)** — pipe the message via stdin:
-
-```bash
-cat << 'EOF' | himalaya template send
-From: you@example.com
-To: recipient@example.com
-Subject: Test Message
-
-Hello from Himalaya!
-EOF
-```
-
-Or with headers flag:
-
-```bash
-himalaya message write -H "To:recipient@example.com" -H "Subject:Test" "Message body here"
-```
-
-Note: `himalaya message write` without piped input opens `$EDITOR`. This works with `pty=true` + background mode, but piping is simpler and more reliable.
-
-### Move/Copy Emails
-
-Move to folder (target folder comes first, then the message ID):
-
-```bash
-himalaya message move "Archive" 42
-```
-
-Copy to folder (target folder comes first, then the message ID):
-
-```bash
-himalaya message copy "Important" 42
-```
-
-### Delete an Email
-
-```bash
-himalaya message delete 42
-```
-
-### Manage Flags
-
-Add flag:
-
-```bash
-himalaya flag add 42 --flag seen
-```
-
-Remove flag:
-
-```bash
-himalaya flag remove 42 --flag seen
-```
-
-## Multiple Accounts
-
-List accounts:
-
-```bash
-himalaya account list
-```
-
-Use a specific account:
-
-```bash
-himalaya --account work envelope list
-```
-
-## Attachments
-
-Save attachments from a message:
-
-```bash
-himalaya attachment download 42
-```
-
-Save to specific directory:
-
-```bash
-himalaya attachment download 42 --downloads-dir ~/Downloads
-```
-
-## Output Formats
-
-Most commands support `--output` for structured output:
-
-```bash
-himalaya envelope list --output json
-himalaya envelope list --output plain
-```
-
-## Debugging
-
-Enable debug logging:
-
-```bash
-RUST_LOG=debug himalaya envelope list
-```
-
-Full trace with backtrace:
-
-```bash
-RUST_LOG=trace RUST_BACKTRACE=1 himalaya envelope list
-```
-
-## Tips
-
-- Use `himalaya --help` or `himalaya <command> --help` for detailed usage.
-- Message IDs are relative to the current folder; re-list after folder changes.
-- For composing rich emails with attachments, use MML syntax (see `references/message-composition.md`).
-- Store passwords securely using `pass`, system keyring, or a command that outputs the password.
+Reviewed tag v2.2.1 (commit metadata
+`5b12b2a8c2c253b98f15c46610ad74cba2a182bc`): README, Cargo metadata, sample TOML,
+CLI/main, selected shared commands and handler excerpts. README says no in-place
+configuration subcommand, but the parser exposes top-level `configure`; prefer the
+selected parser's surface and do not assume an in-place merge/write guarantee.
+Master differs from the tag (including wizard feature text); don't blend them.
+Standalone [MML](https://github.com/pimalaya/mml) README was read, not its entire
+compiler/renderer/security chain. No CLI, compiler, account, mail, OAuth, secret
+store, attachment, send, queue or provider/Windows runtime was exercised.
+`runtime_verified` stays false. Large config/builder/client/dependency/model/SDK
+and version-specific v1 behavior remain unreviewed; hashes/static tests do not
+establish authenticity, consent, mail privacy or operational qualification.

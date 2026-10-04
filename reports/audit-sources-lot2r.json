@@ -1,0 +1,459 @@
+{
+  "date": "2026-10-03",
+  "scope": "Lot2r:AgentMail guide and all5refs fully read/corrected;72partial/155unreviewed/0closed. Public docs/metadata/source only,CLIabsent;no nativeSDK/import/build/install/account/mail/credential/service action.",
+  "sources": [
+    {
+      "name": "cli-npm",
+      "url": "https://registry.npmjs.org/agentmail-cli/latest",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-npm",
+      "sha256": "90b0068c44c2a6bb01cea658be91feacb8f7f55add61cc3e8ba76255185e3598",
+      "inspection": "Entire smallregistry JSONread:1.8.0/gitHead/optionalnative4platforms/noengines/distSRI. Registry signatures/provenance links merely observed,not verified;_nodeVersion publisher metadata not minimum."
+    },
+    {
+      "name": "python-pypi",
+      "url": "https://pypi.org/pypi/agentmail/json",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-python-pypi",
+      "sha256": "fedda026699e81a5c3e6f1b48fd21691ba2b02d927970846a217c106d197d7f4",
+      "inspection": "Parsed info/version2.0.8/requires_python>=3.8<4/repository only. Large release/file/description/other metadata not fully read;no wheel/source artifact downloaded/verified/installed."
+    },
+    {
+      "name": "agent-reference",
+      "url": "https://agentmail.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-agent-reference",
+      "sha256": "92812e68beefeafee5db71c0b9c758db31c07919e8e2d8344f06692f0a6498dd",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "llms",
+      "url": "https://docs.agentmail.to/llms.txt",
+      "error": "HTTPError",
+      "inspection": "Failed public source request;no body/runtime evidence. Initial docs.agentmail.to/llms.txt failed HTTPError without recorded status;public agentmail.md index used instead. Three guessed model paths404 resolved via official tree paths, not credentials/service fallback."
+    },
+    {
+      "name": "ref-core",
+      "url": "https://agentmail.md/core",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-ref-core",
+      "sha256": "e971c98027918325dd62c675ac36633790e8ddbc06dd86657d120a4441ab532a",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "ref-signup",
+      "url": "https://agentmail.md/signup",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-ref-signup",
+      "sha256": "fd9c6b0ccc480b0ef6d52cb07f4336a0541bd2de1b3ecab8827506f935fe3598",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "ref-webhooks",
+      "url": "https://agentmail.md/webhooks",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-ref-webhooks",
+      "sha256": "415037352156a346c494c88c8b541b574a84d3ed9694f08a9b9ad68ea584fa47",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "ref-websockets",
+      "url": "https://agentmail.md/websockets",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-ref-websockets",
+      "sha256": "5aa78d5542da5980fd009e10d5add3b76795b81c03536582c2e9c50eb46e1913",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "ref-mcp",
+      "url": "https://agentmail.md/mcp.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-ref-mcp",
+      "sha256": "d466661f899fdd29bcdda141e6b0c8fd5d4d1bcf4e7832e1d23a5cc16100e121",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "ref-llms",
+      "url": "https://agentmail.md/llms.txt",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-ref-llms",
+      "sha256": "1e069d4ebca01295548c3da3bb97c62adc04b5d5514ed73427dc1f60ed6315ba",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-readme",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/README.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-readme",
+      "sha256": "d32dab3fc09d21549523428e28088e173187b9f75745520a0fe76f5e6bc3e619",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-tree",
+      "url": "https://api.github.com/repos/agentmail-to/agentmail-cli/git/trees/3db079239f53a37e26308793eae04ae00f9381eb?recursive=1",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-tree",
+      "sha256": "5079e9190555d283291a3f702ee0f36d45da492320716960e28d8d54a5d423ab",
+      "inspection": "Public tree revision/path matching only;not all files read. Commit metadata separately parsed,do not confuse embeddedcommit.treeSHA with revision lookup/response.sha."
+    },
+    {
+      "name": "cli-package",
+      "url": "https://registry.npmjs.org/agentmail-cli/-/agentmail-cli-1.8.0.tgz",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-package",
+      "sha256": "94ea85d1e041c5237d92e6d3eadc9726879d9269b1213966f939c8bc58c14b75",
+      "inspection": "3063byte tarball read in memory,3regularmembers <=50k each copied individually to temp for text inspection;SRIsha512 equals same registrymetadata,not independent authenticity/provenance/nativebinary trust. No extractall/install/native/JS execution."
+    },
+    {
+      "name": "python-readme",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/main/README.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-python-readme",
+      "sha256": "2dc58edf77de98637748f7af8e1766f3b6de3aa06ec1750f79b22cb5fc7c5fad",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "python-tree",
+      "url": "https://api.github.com/repos/agentmail-to/agentmail-python/git/trees/main?recursive=1",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-python-tree",
+      "sha256": "06432a8c314c3d967acd636f598e5adcfb98f24f9b44cdaf24855fc891cf18b8",
+      "inspection": "Public tree revision/path matching only;not all files read. Commit metadata separately parsed,do not confuse embeddedcommit.treeSHA with revision lookup/response.sha."
+    },
+    {
+      "name": "cli-reference.md",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/reference.md",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-reference.md",
+      "sha256": "8f5e9861ee930e048325b639703eed6dbee89276671cd3ab6d1d5f346ff7cc79",
+      "inspection": "Scoped lines98-166,487-591,951-1122,2458-2572 fully read;keyword path inventory only elsewhere. Selected nestedspace commands/plurallabels,signupoptionalhuman/rotatingrepeat/OTP24h10attempts,sendIdempotencyKey24h409,pageToken/scopedhooks. Rest reference unreviewed."
+    },
+    {
+      "name": "cli-Cargo.toml",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/Cargo.toml",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-Cargo.toml",
+      "sha256": "1fc1091cac8d439090940b77d95080f29e2d5b3e98a65ce80dee02181bc88961",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-cli-agentmail-main.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/cli/agentmail/main.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-cli-agentmail-main.rs",
+      "sha256": "a536a87226104f07b0cb0686f6689191e09f962e875e0ae21bc0156acf0d7cf6",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-src-http.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/http.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-http.rs",
+      "sha256": "eeec32e555b1aa65b27f269709e45dd167c391b37b585bc2521372444b35913f",
+      "inspection": "Lines1-35 and718-892 read only plus keyword matches;timeouts defaultnone,default4attempts andretry408/429always-safe mutation caveat. Full transport/redirect/security/callees/tests not read or executed."
+    },
+    {
+      "name": "cli-src-cli_args.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/cli_args.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-cli_args.rs",
+      "sha256": "8a67933cb7c317a6115e6fba9716f956549ea256e192bb1e33ef2d02b9484468",
+      "inspection": "Keyword matches only,not full file read/qualified. json-stdin andglobal operation flags crosschecked in fullREADME/scopedreference,not a nativeCLI parser test."
+    },
+    {
+      "name": "cli-src-openapi-parser.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/openapi/parser.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-openapi-parser.rs",
+      "sha256": "8d1da99d3fa23df261fff0d2d887d31492150cd475b40e2b33e02f7e58087ce5",
+      "inspection": "Lines1755-1869 retryconfig excerpt read and keyword scan only;not fullparser/aliases/CLIfieldregistration/security trace or qualification."
+    },
+    {
+      "name": "cli-src-openapi-executor.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/openapi/executor.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-openapi-executor.rs",
+      "sha256": "f390501a5dc2b71fbfb7e66f21f49ffde9624c6f0da494bef14c6212cbe495bb",
+      "inspection": "Lines1270-1414,2024-2168 read only plus keyword matches:emitpagebefore page_limit continuation anddryrunrequest body/query/multipart metadata output. Remaining ~13kline validation/HTTP/pagination/SDK/security/output/runtime chain unreviewed;no native tests."
+    },
+    {
+      "name": "cli-src-websocket-auth.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/websocket/auth.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-websocket-auth.rs",
+      "sha256": "793903fcc2bca82b505afb80138d02f6fabd273040b8788df5da32cd69b5366f",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-src-websocket-client.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/websocket/client.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-websocket-client.rs",
+      "sha256": "9be75fed6fe0b54e334a725f362426df495939f4a714f7564fd0f984c9a704fc",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-src-asyncapi-agent.asyncapi.yaml",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/asyncapi/agent.asyncapi.yaml",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-asyncapi-agent.asyncapi.yaml",
+      "sha256": "69d20c8f10422d6c08d425e78c3bc0655a90aff86b7c35788e67c4b5a8733050",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-get_attachment_response.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/get_attachment_response.rs",
+      "http": 404,
+      "error": "HTTPError",
+      "inspection": "Failed public source request;no body/runtime evidence. Initial docs.agentmail.to/llms.txt failed HTTPError without recorded status;public agentmail.md index used instead. Three guessed model paths404 resolved via official tree paths, not credentials/service fallback."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-inboxes_list_query_request.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/inboxes_list_query_request.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-inboxes_list_query_request.rs",
+      "sha256": "f7f23f22c8646b3eaa58f3ba4b9d6dbbab5d5cd8f140829d46c7d130d90709f5",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-list_messages_response.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/list_messages_response.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-list_messages_response.rs",
+      "sha256": "5470d8e1eab454bbde6d6885c54affac795b678376955188e121c8a45cc935d8",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-webhooks_webhook.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/webhooks_webhook.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-webhooks_webhook.rs",
+      "sha256": "7df68de6adf2aca72bde513bc2623931f3a7d03ad673a14d4c2cb153c09ae440",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-agent_sign_up_request.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/agent_sign_up_request.rs",
+      "http": 404,
+      "error": "HTTPError",
+      "inspection": "Failed public source request;no body/runtime evidence. Initial docs.agentmail.to/llms.txt failed HTTPError without recorded status;public agentmail.md index used instead. Three guessed model paths404 resolved via official tree paths, not credentials/service fallback."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-agent_verify_request.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/agent_verify_request.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-agent_verify_request.rs",
+      "sha256": "a631fba174475d6cb4f683ca122d1b5ddbdf4710177bc5e3e833b295c0868891",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "py-pyproject.toml",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/pyproject.toml",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-pyproject.toml",
+      "sha256": "1f72e87a64154b61c94d08a93167ac58f38228c0bbfd48a74afba0ac5474b5da",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-websockets-client.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/websockets/client.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-websockets-client.py",
+      "sha256": "0aa9ed44fa705a96390c679fd6d4857b555fa0db5960a395c11417d8f979db04",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-websockets-socket_client.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/websockets/socket_client.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-websockets-socket_client.py",
+      "sha256": "db577d2a1a66bc22e9aa1562515b5ed98c674e1f8ece1181ab10411190299646",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-websockets-types-subscribe.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/websockets/types/subscribe.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-websockets-types-subscribe.py",
+      "sha256": "98faa6c4ddb808eaa9eab944eaccf8dcbe5e8f1a55219b2c97e909eb7078abe3",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-websockets-types-subscribed.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/websockets/types/subscribed.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-websockets-types-subscribed.py",
+      "sha256": "e3fed74a13ced5ac12ee17ad41ec456284093cb1c5f41ab8e09010d2fb5baf11",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-environment.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/environment.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-environment.py",
+      "sha256": "8f9f96251054a337951f73e55c3947440a1437062318c87770ec41f8bd55554f",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-types-message_received_event.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/types/message_received_event.py",
+      "http": 404,
+      "error": "HTTPError",
+      "inspection": "Failed public source request;no body/runtime evidence. Initial docs.agentmail.to/llms.txt failed HTTPError without recorded status;public agentmail.md index used instead. Three guessed model paths404 resolved via official tree paths, not credentials/service fallback."
+    },
+    {
+      "name": "py-src-agentmail-core-http_client.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/core/http_client.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-core-http_client.py",
+      "sha256": "20bb36699412208b114dcaa82bcd7fd7795edb8d1471f2f601ed8756b921bcad",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-src-lib.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/src/lib.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-src-lib.rs",
+      "sha256": "a558c69f79fd69fee4b7c47ecb54d2747abca6852adb53b25b1d36b402f5f5f0",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-cli-agentmail-sdk.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/cli/agentmail/sdk.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-cli-agentmail-sdk.rs",
+      "sha256": "94876fd76cdb01d4e3837a58b7f99148088e1ba260a6ccae42a74f1df195b04c",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-cli-agentmail-openapi0.json",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/cli/agentmail/openapi0.json",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-cli-agentmail-openapi0.json",
+      "sha256": "6d9f08f46c0f401a2747b78c4e311c7f9504ee73ad8d185fcb7d4ac0ad0bb468",
+      "inspection": "JSON parsed;only selected objects derived/inspected:signup/create/listinboxes/list/get/attachment/send/reply/forward/idempotency/labels/globalwebhook paths andSignup/CreateInbox/SendMessage/SendAttachment/WebhookallOf/ListMessages/MessageItem/Message/Subscribe/EventTypes/clientIDs schemas. Rootinfo/base/param arrays inspected;large remaining schema/operations/type constraints/aliases/callees unreviewed. Syntax/schema field presence is not runtime/server validation."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-agent_signup_request.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/agent_signup_request.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-agent_signup_request.rs",
+      "sha256": "a4df5b95a6ff7e3f423ea9821fc7598c5fe6e7e1e85cf98833e856a66949c0db",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-attachment_response.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/attachment_response.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-attachment_response.rs",
+      "sha256": "1ee13338d084e5abcc2fee414a548ce8ba9c40dececf58b21394a3de3476cf8c",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-send_message_request.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/send_message_request.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-send_message_request.rs",
+      "sha256": "312fab3b60c7ac29da5679b9cc5a38cf1a2fb4527b34a211c3a87658ed5567b3",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-agentmail-types-src-types-webhooks_create_webhook_request.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-types/src/types/webhooks_create_webhook_request.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-types-src-types-webhooks_create_webhook_request.rs",
+      "sha256": "db1fb5ebcdbe1e77b80e6c5f015a159aa3c6827c6807aff53fb232ac5878d07b",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "cli-agentmail-sdk-src-client.rs",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-cli/3db079239f53a37e26308793eae04ae00f9381eb/agentmail-sdk/src/client.rs",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-agentmail-sdk-src-client.rs",
+      "sha256": "428c186ea77f625d6a5a0c1e950dd2d1dbea360ba179bb1ee6c859ccb07a7359",
+      "inspection": "Downloaded only, not read or qualified. NativeWebSocket/auth/HTTP/model/SDK/framework/dependency/Svix chains not fully reviewed. Generic asyncapi sample is not AgentMail mail-event protocol evidence."
+    },
+    {
+      "name": "py-src-agentmail-events-types-message_received_event.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/events/types/message_received_event.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-events-types-message_received_event.py",
+      "sha256": "b87066015cd38c3820fa7ffa49234134c720b020761842824f87c4d914debb7a",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "py-src-agentmail-core-client_wrapper.py",
+      "url": "https://raw.githubusercontent.com/agentmail-to/agentmail-python/9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/src/agentmail/core/client_wrapper.py",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-src-agentmail-core-client_wrapper.py",
+      "sha256": "3664b45ff5b2b9e52fbe10960aefcfa1ab9283effabaebc265db2e3658d90d19",
+      "inspection": "Full text read. Public hosted/main docs may move;version-specific snippets/models/frontend code are not complete dependency/server/privacy/runtime or author approval qualification."
+    },
+    {
+      "name": "cli-commit",
+      "url": "https://api.github.com/repos/agentmail-to/agentmail-cli/commits/3db079239f53a37e26308793eae04ae00f9381eb",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-cli-commit",
+      "sha256": "a5d7c15b339a465c6bc343fa8fc72eecf6e7ed14dd76b5c42aa389dee3023190",
+      "inspection": "CommitSHA andembeddedtreeSHA parsed only. CLIcommit3db079239f53a37e26308793eae04ae00f9381eb/tree979e0b659b1f6c972dcd2d2887df09ced09137ce;Pythoncommit9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/tree03e904c7c891d96550d14364a5cd6287b2578533. Other metadata/diffs/signatures not read/verified."
+    },
+    {
+      "name": "py-commit",
+      "url": "https://api.github.com/repos/agentmail-to/agentmail-python/commits/main",
+      "http": 200,
+      "local_file": "/tmp/skill-audit-2r-py-commit",
+      "sha256": "a3eb70b7dd6b9be415a928bc6cce407b9546bbc631bffa7f8aef4d7196795322",
+      "inspection": "CommitSHA andembeddedtreeSHA parsed only. CLIcommit3db079239f53a37e26308793eae04ae00f9381eb/tree979e0b659b1f6c972dcd2d2887df09ced09137ce;Pythoncommit9df61ab2fa07ff3aec40308d3e8f78a8f52da9c1/tree03e904c7c891d96550d14364a5cd6287b2578533. Other metadata/diffs/signatures not read/verified."
+    }
+  ],
+  "archive_derived_resources": [
+    {
+      "local_file": "/tmp/skill-audit-2r-npm-package-README.md",
+      "sha256": "d32dab3fc09d21549523428e28088e173187b9f75745520a0fe76f5e6bc3e619",
+      "source": "cli-package tarball regular exact member,metadataSRI matched;all3texts read. README same text as pinned source,wrapper not executed;no native optional package qualification."
+    },
+    {
+      "local_file": "/tmp/skill-audit-2r-npm-package-bin-cli.js",
+      "sha256": "4dac7486f503c74f8818c9dab8c49e10271b516b491126804dc83f87c5985070",
+      "source": "cli-package tarball regular exact member,metadataSRI matched;all3texts read. README same text as pinned source,wrapper not executed;no native optional package qualification."
+    },
+    {
+      "local_file": "/tmp/skill-audit-2r-npm-package-package.json",
+      "sha256": "e2e73d4629d4a25abab3042540f87a4cf6d4356c7d648cb682163d9467a78285",
+      "source": "cli-package tarball regular exact member,metadataSRI matched;all3texts read. README same text as pinned source,wrapper not executed;no native optional package qualification."
+    }
+  ],
+  "current_local_file_sha256": {
+    "skills/active/email/agentmail/SKILL.md": "5a0be5658e3a95379369b1dc7a062965281cf91c330fe97ddeec6bdf8a2725e9",
+    "skills/active/email/agentmail/references/core.md": "a99b465b36b24db972a849a9ea8c91b779a463e28c573030848c8b555b6910c6",
+    "skills/active/email/agentmail/references/mcp.md": "20afe540d42c47c86ad3b84bf3f7a7ae398d12c726dac3200f5365fa25661e25",
+    "skills/active/email/agentmail/references/signup.md": "1128b35ad494c63e6d7b07f43e785543e21a25fe27863b20d778f7569f485997",
+    "skills/active/email/agentmail/references/webhooks.md": "b35bfe065e63f792655fcdd567a9aa7aae05408baa0d51a5c29a9eee197a7f1c",
+    "skills/active/email/agentmail/references/websockets.md": "4af76f39b529d6d3f5363f887e02009d3b0fc7a5b2aa5e6e13c61eaf22bee9a8",
+    "scripts/test_agentmail_contracts.py": "372fab6200e4d3822661ea642c71fd2f732a8cee7bd326b873933b0f0898fa0f"
+  },
+  "corrections": [
+    "No assumedterminal/HermesPTY/process/MCP/env runtime;no implicit latest/npx/install/healthcheck inboxlist/signup/region/client/payment/rawWS fallback. Scope exactorg/key/inbox/backendorigin/operation/output/cost;metadata attribution/license retained.",
+    "CLI1.8.0 native4platform npm map excludesWindows;engines absent,_nodeVersion is not minimum,other channels/build/native/dependencies unqualified. Filtereddotenv selecteddenylist is not sandbox/malformed entries can skip;currentprocess transport/pager/auth/log scope required.",
+    "Nestedspace selectedreference vs oldhostedcolon;plural labels/query andJSONarrays/requeststdin vs outputformat;effectiveparams overrides,CLIrootorigin vsRESTv0/SDK regions and no auth/billingfallback. Typedbody inertfixtures, not native/provider tests.",
+    "Signup optionalhuman/receiveonly/noOTPuntilattach/keyresponsecannotretrieved;samehuman repeatedsignup rotates/revokesoldkey,not safeidempotency. Secretresponsestdout/OTPargv/privateoutput/referrerqueryprivacy/no default test send;24h10attempts/no guessing/retry/rotation/recoveryauthority.",
+    "SendfullcurrentFromToCcBcc/ReplyTo/body/attachments/headers/tracking/currentinbox-ID approval distinctlocaldraft/serverwrite;24h IdempotencyKey originalvs409 conflict notuniversal exactlyonce,manual andautomaticretries ambiguous outcomes. Labels/messageIDs/readback notconsent/delivery/workcompletion.",
+    "pageall10cap/emitbeforecontinuation/exit0 NDJSON is not allpages;boundedopaque cursors/repeats/empty pages/partial/querycategory limits andno snapshot. Extractednewtext/HTML notfull/identity/sanitizer;nogenericremoteHTML/read-more/replyauthority.",
+    "Attachmentget metadata/signed downloadurl/texturl/expires_at notbytes;noBearerforward/urlfilename/private no-clobber bounds/servicefetch/Base64whole6MB vsURL~30MB documentednotruntimeguarantee. No publisher/downloader/keycapture helper implemented.",
+    "Webhookcurrentarray/scopedendpoint/podORunion andsecret-storage/no default publicservice;rawSvixverify/stale-future clock/replay/validatedscope/durable-before2xx/noblindreply/IDs notuniversal businessdedup. No receiver/SDK verifier/state/outbox implemented or security tested.",
+    "WSclientheaderBearer vs connectquerykey,ApiErrorheaders cancontainAuthorization;privateerrors/deadlines/nonempty explicitscope/Subscribed ack. MessageReceivedEvent classcoversspamblockedunauth;exactevent_type+IDs/uncheckedconstructor/bytes/skippedunknown/rawdict/gaps/noblindupdate. No defaultlogging/listener/rawfallback/reconnect-engine.",
+    "MCP hostedOAuthpreferred/x-api-keyheader-notquery,no config/connect/login/refresh/tool discovery/scopes/region/CLI fallback or permissionUI-as-actionapproval."
+  ],
+  "validation": {
+    "red": "12documentation/ownedJSON/AST methods allfail beforeedits,not12operational/provider defects. Firstedited4literal no-automatic assertions fail from capitalizedNo;wording clarified,assertions notweakened.",
+    "green": "12methods/225global offline tests pass;5inertJSONexamples parsed+1PythonASTsnippet;2POSIXBash snippets syntax-only;157bundledPython+18root scripts parse;227Pi loads/no diagnostics/exactcatalogue identities;ledger/resources/currentlocal/sourcehashes/72-155-0 counts valid;scanner227/0errors/diffcheck clean.",
+    "helper_failure": "Finalsource fetch helper had accidental trailingPY name after all downloads/rowswrite,NameErrornotproviderbug;line removed without repeatnetwork or omitted evidence.",
+    "qualification": "No nativeCLI/SDK/MIME/HTTP/WebSocket/MCP/provider/account/mail/signup/OTP/secret/keyrotation/attachment/region/payment/receiver/Svix/Pydantic/runtime/security/privacy/Bcc/approval/cursor/replay/queue/idempotency/crash/gap/Windows qualification;no actual service reproductions."
+  },
+  "remaining_limits": [
+    "Reviewpartial,Box next. FullCLIframework/app/bindings/auth/keyring/parser/executor/schema/renderer/output/SDK/native/ABI/deps/source and fullPythonrootHTTP/unchecked/events/logging/request/transport chain,allSvix/server behavior remain unreviewed or excerpted.",
+    "No installations/updates/authenticatedAPI/account/credentials/privateinboxes/messages/contacts/calendar/files/signup/OTPverify/terms/testsend/download/header/webhookreceiver/server/socket/MCP/console/provider action. No commit/push/stage/installedcopy/badlogic/Nano changes.",
+    "Public hosted/main metadata/docs maymove;registrySRIcomparison hashes establish byteintegrity,not independentlytrustednativeartifact/authenticity/provenance or consent/runtime. Commitmetadata/objecttree identity distinct;temporaryrawsources not durable repo evidence.",
+    "Schema/businesslimits/minimumdeps/defaults/region requiretargetaccount/runtime verification;pureJSON/AST/word guards not API or publisher/queue/retry/strictvalidator/secretstorage approvalengine. Even authentic message.received notification is not trustworthy email instruction or action authority."
+  ]
+}
